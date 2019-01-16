@@ -1,0 +1,185 @@
+
+{
+    "section-banner":{
+        "ul":{
+            "li_0":{
+                "img":{
+                    "src":"//i1.mifile.cn/f/i/2018/mi8ud/banner_bg1.jpg"
+                }
+            },
+            "li_1":{
+                "img":{
+                    "src":"//i1.mifile.cn/f/i/2018/mi8ud/banner_bg2.jpg"
+                }
+            }
+        },
+        "h2_0":"旗舰代表作全新升级",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/2018/mi8ud/banner_text.png"
+        }
+    },
+    "section-specs":{
+        "ul":{
+            "li_0":{
+                "p_0":"全球首款 压感屏幕指纹",
+                "p_1":"轻压屏幕，瞬间解锁"
+            },
+            "li_1":{
+                "p_0":"全球首款 双频GPS",
+                "p_1":"L1 + L5双频超精准定位"
+            },
+            "li_2":{
+                "p_0":"透明玻璃机身",
+                "p_1":"另有暮光金、曜石黑"
+            },
+            "li_3":{
+                "p_0":"红外人脸识别",
+                "p_1":"全黑环境疾速解锁"
+            },
+            "li_4":{
+                "p_0":"骁龙845 AIE 处理器",
+                "p_1":"超旗舰性能"
+            },
+            "li_5":{
+                "p_0":"超轻四曲面",
+                "p_1":"轻薄圆润，舒适手感"
+            }
+        }
+    },
+    "section-appearance":{
+        "p_0":"* 小米8 屏幕指纹版产品站中图片所示的屏幕指纹动画效果，在初期销售批次手机中尚未搭载，",
+        "p_1":"后续会通过 OTA 支持，更新进度最终以MIUI官网公布、MIUI稳定版功能更新为准。",
+        "video":{
+            "loop":"loop",
+            "preload":"none",
+            "src":"//i1.mifile.cn/f/i/2018/mi8ud/video.mp4",
+            "type":"video/mp4"
+        }
+    },
+    "model-text model-text1 font-70s":{
+    },
+    "section-model02":{
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/2018/mi8ud/model_02.jpg"
+        }
+    },
+    "model-text model-text2 font-70s":{
+        "p_0":"<span>透明机身",
+        "p_1":"一部与众不同的手机",
+        "p_4":"晶莹的四曲面玻璃机身下，",
+        "p_5":"饰以精密元器件点缀，",
+        "p_6":"科技与美学在此完美结合。",
+        "span_0":"透明机身",
+        "span_1":"一部与众不同的手机",
+        "span_4":"晶莹的四曲面玻璃机身下，",
+        "span_5":"饰以精密元器件点缀，",
+        "span_6":"科技与美学在此完美结合。"
+    },
+    "section-model03":{
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/2018/mi8ud/model_03.jpg"
+        }
+    },
+    "model-text model-text3 font-70s":{
+        "p_0":"秋日特调暮光金",
+        "p_1":"四曲面机身，精美外观",
+        "p_4":"暮光金的灵感源于莫奈画作，采用真空纳米溅镀工艺，",
+        "p_5":"打造四曲面渐变镜面机身，轻薄圆润，握感舒适。",
+        "span_0":"秋日特调暮光金",
+        "span_1":"四曲面机身，精美外观",
+        "span_4":"暮光金的灵感源于莫奈画作，采用真空纳米溅镀工艺，",
+        "span_5":"打造四曲面渐变镜面机身，轻薄圆润，握感舒适。"
+    },
+    "section-model04":{
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/2018/mi8ud/model_04.jpg"
+        }
+    },
+    "model-text model-text4 font-70s":{
+    },
+    "section-model05":{
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/2018/mi8ud/model_05.jpg"
+        }
+    },
+    "model-text model-text5 font-70s":{
+        "p_0":"骁龙845 AIE 处理器，旗舰标配",
+        "p_1":"支持《王者荣耀》Vulkan版",
+        "p_4":"全面提升游戏性能表现，",
+        "p_5":"帧率更稳定，画面更细腻。",
+        "span_0":"骁龙845 AIE 处理器，旗舰标配",
+        "span_1":"支持《王者荣耀》Vulkan版*",
+        "span_4":"全面提升游戏性能表现，",
+        "span_5":"帧率更稳定，画面更细腻。"
+    },
+    "section-model06":{
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/2018/mi8ud/model_06.jpg"
+        }
+    },
+    "model-text model-text6 font-70s":{
+        "p_0":"1200万+1200万",
+        "p_1":"DxOMark 超百分相机",
+        "p_4":"1.4&#x3BCm超大感光像素，Dual PD 疾速对焦技术，",
+        "p_5":"暗光下，仍可捕捉美好瞬间。",
+        "span_0":"1200万+1200万",
+        "span_1":"DxOMark 超百分相机",
+        "span_4":"1.4&#x3BCm超大感光像素，Dual PD 疾速对焦技术，",
+        "span_5":"暗光下，仍可捕捉美好瞬间。"
+    },
+    "section-ai":{
+        "ul":{
+            "li_0":{
+                "p_0":"AI 影棚光效",
+                "p_1":"窗边光、彩虹光等7种影棚光效"
+            },
+            "li_1":{
+                "p_0":"AI 短视频剪辑",
+                "p_1":"一键生成电影级大片"
+            },
+            "li_2":{
+                "p_0":"AI 场景相机",
+                "p_1":"智能识别206种拍摄场景"
+            },
+            "li_3":{
+                "p_0":"AI 人像模式",
+                "p_1":"梦境般背景虚化"
+            }
+        }
+    },
+    "section-pic ":{
+        "ul":{
+            "li_0":{
+                "img":{
+                    "src":"//i1.mifile.cn/f/i/2018/mi8ud/slider_01.jpg",
+                    "data_src":"//i1.mifile.cn/f/i/2018/mi8ud/slider_01.jpg"
+                }
+            },
+            "li_1":{
+                "img":{
+                    "data_src":"//i1.mifile.cn/f/i/2018/mi8ud/slider_02.jpg?"
+                }
+            }
+        }
+    },
+    "section-icon":{
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/2018/mi8ud/icon_bg.jpg"
+        }
+    },
+    "model-text model-text7 font-70s":{
+    },
+    "pic_tool_src":[
+        {
+            "name":"icon-slides.png",
+            "src":"http://i1.mifile.cn/f/i/2014/cn/icon/icon-slides.png"
+        },
+        {
+            "name":"icon-slides.png",
+            "src":"http://i1.mifile.cn/f/i/2014/cn/icon/icon-slides.png"
+        }
+    ],
+    "pic_src":[
+    ]
+}
+

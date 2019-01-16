@@ -1,0 +1,44 @@
+
+[
+    {
+        "href":"//www.mi.com/index.html",
+        "title":"小米商城"
+    },
+    {
+        "href":"https://www.miui.com/",
+        "title":"MIUI"
+    },
+    {
+        "href":"https://iot.mi.com/index.html",
+        "title":"IoT"
+    },
+    {
+        "href":"https://i.mi.com/",
+        "title":"云服务"
+    },
+    {
+        "href":"https://jr.mi.com?from=micom",
+        "title":"金融"
+    },
+    {
+        "href":"https://youpin.mi.com/",
+        "title":"有品"
+    },
+    {
+        "href":"https://shuidi.mi.com/",
+        "title":"小爱开放平台"
+    },
+    {
+        "href":"https://b.mi.com/?client_id=180100031058&masid=17409.0358",
+        "title":"政企服务"
+    },
+    {
+        "href":"//www.mi.com/appdownload/",
+        "title":"下载app"
+    },
+    {
+        "href":"#J_modal-globalSites",
+        "title":"Select Region"
+    }
+]
+

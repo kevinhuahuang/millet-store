@@ -1,0 +1,221 @@
+
+{
+    "section-index":{
+        "type":"imgText",
+        "position":"left_middle",
+        "h2_0":"黑鲨游戏手机",
+        "p_0":"液冷更快  一键战力觉醒",
+        "p_1":"骁龙 845",
+        "p_2":"最高可选 8GB 大内存 + 256GB 存储",
+        "price":"2299",
+        "original":"2999",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark/index/index_summary1.png?"
+        }
+    },
+    "section-video":{
+       "type":"imgVideo",
+       "position":"left_top",
+        "video":{
+            "autoplay":"autoplay",
+            "loop":"loop",
+            "preload":"none",
+            "src":"//i1.mifile.cn/f/i/18/blackshark/index/id.mp4",
+            "type":"video/mp4"
+        },
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark/index/index_lable_1.png?"
+        }
+    },
+    "section-screen":{
+        "type":"imgText",
+        "position":"center_top",
+        "h2_0":"18:9 全面超宽视野，游戏抢占先机",
+        "p_0":"5.99&quot 大屏，支持 DCI-P3，色域高达 97%，",
+        "p_1":"配合 18:9 的超宽视野，玩游戏更爽，相比于 16:9 的屏，更快发现两侧目标。",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark/index/index_screen.png?"
+        }
+    },
+    "section-special":{
+        "type":"imgBgImgText",
+        "position":"center_top",
+        "h2_0":"个性与舒适并存",
+        "p_0":"跑车造型、R 角设计匹配指关节弧度，SHARK 造型氛围灯，",
+        "p_1":"开机、来电、通知、游戏场景下，呈现不同效果。",
+        "img_0":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark/index/index_phonebg.png?"
+        },
+        "img_1":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark/index/index_phone1.png?"
+        }
+    },
+    "section-camera":{
+        "type":"imgText",
+        "position":"center_top",
+        "h2_0":"前后 2000 万",
+        "p_0":"大光圈双摄，专业人像模式；智能场景识别，画质暗光增强；前置柔光，自拍更清晰。",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark/index/index_camerabg1.png?"
+        }
+    },
+    "section-cpu":{
+        "type":"imgImgText",
+        "position": "left_top",
+        "h2_0":"骁龙 845 + 8GB 大内存",
+        "p_0":"骁龙 845 高通年度旗舰处理器， 8GB 最高内存可选，",
+        "p_1":"让你在游戏的世界里恣意闯荡",
+        "img_0":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark/index/lable_2.png?"
+        },
+        "img_1":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark/index/index_cpubg.png?"
+        },
+        "div_desc_0":"游戏级图形处理器",
+        "div_desc_1":"最大容量可选",
+        "div_desc_2":"QC3.0 智能双引擎快充"
+    },
+    "section-cooling":{
+        "type":"imgText",
+        "position":"left_top",
+        "ul":{
+            "li_0":{
+                "p_0":"散热面积高达",
+                "p_1":"6000mm²",
+                "span_0":"6000mm²"
+            },
+            "li_1":{
+                "p_0":"对比无热管，CPU散热",
+                "p_1":"效率提升 20倍",
+                "span_0":"20倍"
+            },
+            "li_2":{
+                "p_0":"CPU最大频率下运行",
+                "p_1":"时间提升 70%",
+                "span_0":"70%"
+            },
+            "li_3":{
+                "p_0":"CPU核心温度",
+                "p_1":"降低 8℃",
+                "span_0":"8℃"
+            }
+        },
+        "h2_0":"处理器散热有奇招",
+        "p_0":"普通玩家看配置，高级玩家看散热。多级直触一体式液冷系统，覆盖全部高发热模块，",
+        "p_1":"高效为手机核心部件降温，处理器可以长时间保持高频和稳定输出。",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark/index/index_cooling_2.png?"
+        }
+    },
+    "section-proceimg":{
+        "type":"imgText",
+        "position":"left_top",
+        "h2_0":"独立图像处理芯片",
+        "p_0":"pixelworks 独立图像处理芯片，支持智能运动补偿技术、图像增强、暗景细节处理，",
+        "p_1":"使游戏和视频画质更平滑、不抖动、不拖影。",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark/index/index_proceimgbg.png?"
+        }
+    },
+    "section-protecteyes":{
+        "type":"imgText",
+        "position":"right_top",
+        "h2_0":"专业的视力保护",
+        "p_0":"独立图像处理芯片提供高质量的图像画面，画质",
+        "p_1":"清晰、视频流畅、不抖动，像素级去蓝光，保护",
+        "p_2":"眼睛更专业。",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark/index/index_protecteyesbg.png?"
+        }
+    },
+    "section-micbiso":{
+        "type":"imgText",
+        "position":"left_top",
+        "p_0":"手机正面独立设计第三麦克风，隐藏于",
+        "p_1":"听筒中，吃鸡呼唤队友更清晰",
+        "p_2":"双 Smart PA 设计",
+        "p_3":"HiFi级别音乐呈现，团战声音不干扰",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark/index/index_micbisobg.png?"
+        }
+    },
+    "section-antenna":{
+        "type":"imgText",
+        "position":"left_top",
+        "h2_0":"X 型智能天线",
+        "p_0":"游戏时无论横握、竖握，有效避免 “死亡之握”。",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark/index/index_xbg.png?"
+        }
+    },
+    "section-sharkmodel":{
+        "type":"imgVideo",
+        "position":"center_top",
+        "h2_0":"一键进入 SHARK 模式",
+        "p_0":"借鉴超跑运动模式，精心定制物理游戏键（ SHARK 键），一键性能满血，提供沉浸式的游戏体验。",
+        "video":{
+            "autoplay":"autoplay",
+            "loop":"loop",
+            "preload":"none",
+            "src":"//i1.mifile.cn/f/i/18/blackshark/index/shark.mp4",
+            "type":"video/mp4"
+        },
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark/index/lable_3.png?"
+        }
+    },
+    "section-dock":{
+        "type":"imgVideo",
+        "position":"center_top",
+        "h2_0":"游戏 DOCK 只为游戏",
+        "p_0":"游戏中向下滑指纹键唤出 Dock，十余种优化功能为游戏保驾护航。",
+        "video":{
+            "autoplay":"autoplay",
+            "preload":"none",
+            "src":"//i1.mifile.cn/f/i/18/blackshark/index/dock.mp4",
+            "type":"video/mp4"
+        }
+    },
+    "section-handler":{
+        "type":"imgText",
+        "position":"center_top",
+        "h2_0":"专为手游设计的新物种",
+        "p_0":"黒鲨专用游戏手柄，轻便小巧、方便连接、操控自如，移动 + 瞄准 + 射击同时操作。“大吉大利今晚吃鸡”。",
+        "img_0":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark/index/index_handlerbg.png?"
+        }
+    },
+    "pic_tool_src":[
+    ],
+    "pic_src":[
+        {
+            "name":"index_lastlogo.png",
+            "src":"http://i1.mifile.cn/f/i/18/blackshark/index/index_lastlogo.png"
+        },
+        {
+            "name":"index_aniphone.png",
+            "src":"http://i1.mifile.cn/f/i/18/blackshark/index/index_aniphone.png"
+        },
+        {
+            "name":"audio_1.png",
+            "src":"http://i1.mifile.cn/f/i/18/blackshark/index/audio_1.png"
+        },
+        {
+            "name":"audio_2.png",
+            "src":"http://i1.mifile.cn/f/i/18/blackshark/index/audio_2.png"
+        },
+        {
+            "name":"index_xphone.png",
+            "src":"http://i1.mifile.cn/f/i/18/blackshark/index/index_xphone.png"
+        },
+        {
+            "name":"index_x.png",
+            "src":"http://i1.mifile.cn/f/i/18/blackshark/index/index_x.png"
+        },
+        {
+            "name":"index_xcircle.png",
+            "src":"http://i1.mifile.cn/f/i/18/blackshark/index/index_xcircle.png"
+        }
+    ]
+}
+

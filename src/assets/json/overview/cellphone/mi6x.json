@@ -1,0 +1,280 @@
+
+{
+    "section-infor":[
+        {
+            "p_0":"前置2000万\"治愈系\"自拍 | 后置2000万 AI 双摄 | 标配骁龙660 AIE处理器",
+            "img":{
+                "data_src":"//i1.mifile.cn/f/i/18/mi6x/index_header_title.png?"
+            }
+        },
+        {
+            "p_0":"前置2000万\"治愈系\"自拍 | 后置2000万 AI 双摄 | 标配骁龙660 AIE处理器",
+            "img":{
+                "data_src":"//i1.mifile.cn/f/i/18/mi6x/index_header_title.png?"
+            }
+        },
+        {
+            "p_0":"前置2000万\"治愈系\"自拍 | 后置2000万 AI 双摄 | 标配骁龙660 AIE处理器",
+            "img":{
+                "data_src":"//i1.mifile.cn/f/i/18/mi6x/index_header_title.png?"
+            }
+        }
+    ],
+    "section-video":{
+      "type":"imgVideo",
+      "position":"left_top",
+        "p_0":"看吴亦凡",
+        "p_1":"前后 2000 万，拍人更美",
+        "video":{
+            "autoplay":"autoplay",
+            "loop":"loop",
+            "preload":"none",
+            "src":"//i1.mifile.cn/f/i/18/mi6x/index_video_local.mp4",
+            "type":"video/mp4"
+        }
+    },
+    "section-body":{
+        "h2_0":"杨柳腰 纤薄机身",
+        "h2_1":"盈盈一握，怦然心动",
+        "p_0":"精致纤薄的“杨柳腰”收弧设计，精雕细琢的全金属机身，细腻饱满的磨砂质感，",
+        "p_1":"入手瞬间便已怦然心动！更有 5 种时尚配色可选，匹配爱美的你。",
+        "span_0":"“杨柳腰”"
+    },
+    "section-precamera":{
+      "type":"imgText",
+      "position":"left_top",
+        "h2_0":"前置2000万 “治愈系” 自拍",
+        "h2_1":"一拍就有好心情",
+        "p_0":"近乎完美的自拍，竟可随手拍出？采用索尼 2000 万像素感光元件，可智能合成 2&#x3BCm 超大像素，",
+        "p_1":"感光能力提升 3 倍，配合先进的 AI 人像虚化及 AI 智能美颜4.0，用小米6X 自拍，盛世美颜跃然手中。",
+        "span_0":"治愈系",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/mi6x/index_precamera.jpg?"
+        }
+    },
+    "section-pic":{
+        "img_0":{
+            "data_src":"//i1.mifile.cn/f/i/18/mi6x/index_pic_1.jpg"
+        },
+        "img_1":{
+            "data_src":"//i1.mifile.cn/f/i/18/mi6x/index_pic_2.jpg"
+        },
+        "img_2":{
+            "data_src":"//i1.mifile.cn/f/i/18/mi6x/index_pic_3.jpg"
+        },
+        "img_3":{
+            "data_src":"//i1.mifile.cn/f/i/18/mi6x/index_pic_4.jpg"
+        }
+    },
+    "section-banner":{
+    },
+    "section-aftercamera":{
+      "type":"imgText",
+      "position":"left_top",
+        "h2_0":"后置2000万 AI 双摄",
+        "h2_1":"白天夜晚都清晰",
+        "h3_0":"1200万像素相机，白天拍人更清晰",
+        "h3_1":"2000万像素相机，夜晚拍照更明亮",
+        "h3_2":"AI 场景相机，拍景美 拍人更美",
+        "p_0":"采用12MP+20MP 全索尼感光元件配置，可根据光线智能选择主摄像头。",
+        "p_1":"12MP 白天拍人更清晰，20MP 夜晚拍人更明亮。从此，夜晚的霓虹，白天的风景都能清晰、锐利地捕捉。",
+        "p_2":"*智能选择主摄像头功能现仅在人像模式下支持，普通拍照模式会通过后续OTA支持，最终以 MIUI 官网公布",
+        "p_3":"（www.miui.com）、MIUI稳定版功能更新为准。",
+        "p_4":"1.25&#x3BCm 大像素，配合 f / 1.75 大光圈，",
+        "p_5":"捕捉更多景深信息，白天拍人自然更清晰。",
+        "p_6":"夜景像素 4 合 1，带来 2&#x3BCm 超大像素，感光能力提升 3 倍，配合",
+        "p_7":"f / 1.75 大光圈，轻松吸收更多光线，夜晚拍照画质明亮更纯净。",
+        "p_8":"拍照时可智能识别多达 206 种场景，实时优化调校，",
+        "p_9":"更有拍立淘、智能识别美食卡路里等神奇功能。",
+        "video":{
+            "loop":"loop",
+            "preload":"none",
+            "src":"//i1.mifile.cn/f/i/18/mi6x/index_video.mp4?",
+            "type":"video/mp4"
+        },
+        "img_0":{
+            "data_src":"//i1.mifile.cn/f/i/18/mi6x/index_aftercamera_bg1.jpg"
+        },
+        "img_1":{
+            "data_src":"//i1.mifile.cn/f/i/18/mi6x/index_aftercamera_bg2.jpg"
+        }
+    },
+    "section-pic-list":{
+      "type":"imgText",
+      "position":"left_top",
+        "h2_0":"蜷川实花 · 大师合作滤镜",
+        "p_0":"蜷川实花：日本知名摄影师、电影导演，小米6X 相机首席体验官，",
+        "p_1":"独家定制 5 款滤镜，让你的照片更富文艺气质。",
+        "p_2":"*在初期销售批次手机中暂未搭载蜷川实花大师合作滤镜，会通过后续OTA支持，",
+        "p_3":"最终以 MIUI 官网公布（www.miui.com）、MIUI稳定版功能更新为准。"
+    },
+    "section-game":{
+      "type":"imgText",
+      "position":"left_top",
+        "h2_0":"标配骁龙660 AIE处理器",
+        "h2_1":"旗舰性能",
+        "p_0":"骁龙660 AIE人工智能引擎， 6GB 最高内存可选，128GB 最大容量可选。",
+        "p_1":"更特别针对“王者荣耀满血版”优化，尽享高帧率体验的同时功耗更低，发热更少。"
+    },
+    "section-xiaoai":{
+      "type":"imgText",
+      "position":"left_top",
+        "h2_0":"小爱同学 语音助理",
+        "h2_1":"一句话搞定手机复杂操作",
+        "p_0":"只需一句话，手机便成为你的私人助理，开车时想发短信，做饭时想打电话，",
+        "p_1":"睡觉时想开灯，通通交给小爱同学，复杂操作一句话轻松搞定。",
+        "p_2":"*唤醒方式目前仅支持长摁Home键或点击小爱同学App使用，长摁电源键等使用方式在初期销售批次手机中暂未支持，会通过后续OTA支持，最终以 MIUI 官网公布。小米6X 内置小爱同学不支持语音唤醒、息屏语音唤醒。",
+        "span_0":"“小爱同学”",
+        "span_1":"小爱同学，明天北京天气怎么样？",
+        "span_2":"小爱同学，87美元的6%小费是多少人民币",
+        "span_3":"小爱同学，大点声",
+        "span_4":"小爱同学，明天我要去沈阳出差，穿啥好？",
+        "span_5":"小爱同学，办理入住用英语怎么说?",
+        "span_6":"小爱同学，定一个下午两点的闹铃",
+        "span_7":"小爱同学，我想听吴亦凡的歌",
+        "span_8":"小爱同学，调成勿扰模式",
+        "span_9":"小爱同学，后天几号限行？",
+        "span_10":"小爱同学，快给粱老师打电话",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/mi6x/index_xiaoai_phone.png"
+        }
+    },
+    "section-specs":{
+      "type":"imgText",
+      "position":"left_top",
+        "img_0":{
+            "data_src":"//i1.mifile.cn/f/i/18/mi6x/index_specs_img.jpg"
+        },
+        "img_1":{
+            "data_src":"//i1.mifile.cn/f/i/18/mi6x/index_specs_title.png"
+        },
+        "img_2":{
+            "data_src":"//i1.mifile.cn/f/i/18/mi6x/index_specs_list.png"
+        }
+    },
+    "pic_tool_src":[
+        {
+            "name":"icon-slides.png",
+            "src":"http://i1.mifile.cn/f/i/2014/cn/icon/icon-slides.png"
+        },
+        {
+            "name":"icon-slides.png",
+            "src":"http://i1.mifile.cn/f/i/2014/cn/icon/icon-slides.png"
+        }
+    ],
+    "pic_src":[
+        {
+            "name":"left_arrows_normal.png",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/left_arrows_normal.png"
+        },
+        {
+            "name":"left_arrows_hover.png",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/left_arrows_hover.png"
+        },
+        {
+            "name":"right_arrows_normal.png",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/right_arrows_normal.png"
+        },
+        {
+            "name":"right_arrows_hover.png",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/right_arrows_hover.png"
+        },
+        {
+            "name":"close.png",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/close.png"
+        },
+        {
+            "name":"index_header_1.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_header_1.jpg"
+        },
+        {
+            "name":"index_header_title_1.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_header_title_1.jpg"
+        },
+        {
+            "name":"index_header_2.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_header_2.jpg"
+        },
+        {
+            "name":"index_header_title_2.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_header_title_2.jpg"
+        },
+        {
+            "name":"index_header_3.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_header_3.jpg"
+        },
+        {
+            "name":"index_header_title_3.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_header_title_3.jpg"
+        },
+        {
+            "name":"video-poster201801.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/video-poster201801.jpg"
+        },
+        {
+            "name":"gallery_icon.png",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/gallery_icon.png"
+        },
+        {
+            "name":"index_body_1.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_body_1.jpg"
+        },
+        {
+            "name":"index_body_2.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_body_2.jpg"
+        },
+        {
+            "name":"index_body_3.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_body_3.jpg"
+        },
+        {
+            "name":"index_body_4.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_body_4.jpg"
+        },
+        {
+            "name":"index_body_5.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_body_5.jpg"
+        },
+        {
+            "name":"specs_cir_red.png",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/specs_cir_red.png"
+        },
+        {
+            "name":"specs_cir_blue.png",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/specs_cir_blue.png"
+        },
+        {
+            "name":"specs_cir_pink.png",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/specs_cir_pink.png"
+        },
+        {
+            "name":"specs_cir_gold.png",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/specs_cir_gold.png"
+        },
+        {
+            "name":"specs_cir_black.png",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/specs_cir_black.png"
+        },
+        {
+            "name":"index_pic_line.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_pic_line.jpg"
+        },
+        {
+            "name":"index_banner.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_banner.jpg"
+        },
+        {
+            "name":"index_pic_list_bg.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_pic_list_bg.jpg"
+        },
+        {
+            "name":"index_game.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_game.jpg"
+        },
+        {
+            "name":"index_xiaoai.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/mi6x/index_xiaoai.jpg"
+        }
+    ]
+}
+

@@ -1,0 +1,217 @@
+
+{
+    "section-no0":{
+        "type":"imgText",
+        "position":"left_middle",
+        "h2_0":"黑鲨游戏手机 Helo",
+        "p_0":"双液冷 更能打",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no0-bg.jpg?v=2"
+        }
+    },
+    "section-no1":{
+        "type":"imgBgImgText",
+        "position":"left_bottom",
+        "h2_0":"速度之美 追逐热爱",
+        "p_0":"源自超级跑车的设计语言，带来极具动感的流线外形",
+        "p_1":"当金属后壳遇见3D玻璃，凝光棱线勾勒搭配侧边双线灯光，展现立体之美",
+        "img_0":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no1-bg.jpg?v=1"
+        },
+        "img_1":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/p1-1.png?v=1"
+        },
+        "img_2":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/p1-2.png?v=1"
+        }
+    },
+    "section-no2":{
+        "type":"imgVideo",
+        "position":"right_top",
+        "h2_0":"互动灯效 耀光流彩",
+        "p_0":"近1680万色RGB流彩型灯效，不同场景，多种灯光模式切换",
+        "p_1":"AI游戏灯效，实时战况互动，置身刀光剑影的游戏世界",
+        "video":{
+            "loop":"loop",
+            "autoplay":"autoplay",
+            "preload":"auto",
+            "src":"https://v.mifile.cn/b2c-mimall-media/5e4182385bcc7437e452d3bf62620840.mp4",
+            "type":"video/mp4"
+        }
+    },
+    "section-no3":{
+        "type":"imgText",
+        "position":"center_bottom",
+        "h2_0":"能量激涌 尽情尽兴",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no3-bg.jpg"
+        }
+    },
+    "section-no4":{
+        "type":"imgBgImgText",
+        "position":"center_top",
+        "h2_0":"双液冷分区散热 冷酷到“芯”底",
+        "p_0":"率先使用双排热管和分区散热模式，覆盖手机核心热源，专热专排",
+        "p_1":"热管与 CPU 直触，实现 CPU 热量的直接传导，大幅提升满负荷运行时长",
+        "p_2":"集合一切“冷酷”智慧，只为接近你的体温",
+        "img_0":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no4-bg.jpg?v=1"
+        },
+        "img_1":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no4-phone.png?"
+        }
+    },
+    "section-no5":{
+        "type":"imgText",
+        "position":"center_top",
+        "h2_0":"独立图像处理芯片+ AMOLED 无敌激战视效",
+        "p_0":"18：9 AMOLED 全面屏，搭载独立图像处理芯片，画面显示更精准，更丰富",
+        "p_1":"支持 DCI-P3 及 SRGB 色域模式，高度还原色彩的真实性",
+        "p_2":"支持智能运动补偿技术、图像增强，使游戏画面不拖影，更平滑",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no5-bg.jpg"
+        }
+    },
+    "section-no6":{
+        "type":"imgBgImgText",
+        "position":"center_top",
+        "h2_0":"手游 HDR 时代的引领者",
+        "p_0":"超前 HDR 游戏体验，玩家的福音。团战细节更清晰，放招更精准",
+        "img_0":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no6-bg.jpg"
+        },
+        "img_1":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no6-l.png"
+        },
+        "img_2":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no6-r.png"
+        }
+    },
+    "section-no7":{
+        "type":"imgBgText",
+        "position":"right_top",
+        "h2_0":"X+1 悬浮天线   信号时刻满血",
+        "p_0":"在X天线基础上，增添侧边悬浮式 WIFI 天线",
+        "p_1":"避免游戏横握造成的信号遮挡，信号时刻满血，游戏快人一步",
+        "img_0":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no7-bg.jpg?v=3"
+        },
+        "img_1":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no7-phone.png?v=5"
+        },
+        "img_2":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/p7-line.png?v=3"
+        }
+    },
+    "section-no8":{
+        "type":"imgText",
+        "position":"center_top",
+        "h2_0":"为游戏赋予“声”命力",
+        "p_0":"正面双超线性扬声器，横握出音不遮挡，真正实现外放立体声音效，无需耳机也能“听声辨位”",
+        "p_1":"搭配 Biso 音效， 带来不同凡响的沉浸式游戏体验",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no8-bg.jpg?v=1"
+        }
+    },
+    "section-no9":{
+        "type":"imgVideo",
+        "position":"center_top",
+        "h2_0":"一键 Shark 模式   开启游戏时空",
+      "p_1":"参数配置可通过“ Shark Code ”分享",
+        "video":{
+            "loop":"loop",
+            "autoplay":"autoplay",
+            "preload":"auto",
+            "src":"https://v.mifile.cn/b2c-mimall-media/0832599727f6de7cc66e9fead44e570a.mp4",
+            "type":"video/mp4"
+        }
+    },
+    "section-no10":{
+        "type":"imgVideo",
+        "position":"center_top",
+        "h2_0":"Gamer Studio 为专业竞技而生",
+        "p_0":"CPU、触控、音效、显示、网络等手机关键参数设置全面开放，自由设置带来更专业的游戏体验",
+        "p_1":"参数配置可通过“ Shark Code ”分享",
+        "video":{
+            "loop":"loop",
+            "autoplay":"autoplay",
+            "preload":"auto",
+            "src":"https://v.mifile.cn/b2c-mimall-media/564ee715de1de2822dd9f753bb549b7f.mp4",
+            "type":"video/mp4"
+        }
+    },
+    "section-no11":{
+        "type":"imgBgImgText",
+        "position":"center_top",
+        "h2_0":"Shark Time",
+        "h2_1":"分享你的高光时刻",
+        "p_0":"10 秒AI录屏技术，自动识别游戏精彩瞬间",
+        "p_1":"生成战局内巅峰时刻的视频集锦，玩家可快速分享",
+        "img_0":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no11-bg.jpg?v=1"
+        },
+        "img_1":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no11-phone.png?v=1"
+        }
+    },
+    "section-no12":{
+        "type":"imgText",
+        "position":"left_top",
+        "h2_0":"双翼展开  执掌战场",
+        "p_0":"搭配黑鲨双翼手柄，实现左右手同时操控，画面开阔不遮挡",
+        "p_1":"摇杆与触控板的结合，实现精准的游戏操作联动",
+        "p_2":"多键位组合满足不同玩家的操作习惯",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no12-bg.jpg"
+        }
+    },
+    "section-no13":{
+        "type":"imgText",
+        "position":"right_middle",
+        "h2_0":"AI 智慧双摄",
+        "h2_1":"实时场景识别",
+        "h2_2":"背景虚化",
+        "h2_3":"随心美拍",
+        "p_0":"后置 1200 万 + 2000 万双摄像头支持 AI 拍照",
+        "p_1":"可实现 206 种场景识别",
+        "p_2":"前置 2000 万摄像头，采用背景虚化模式",
+        "p_3":"实现人景分离，让自拍随心所欲",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no13-bg.jpg"
+        }
+    },
+    "section-no14":{
+        "type":"imgText",
+        "position":"left_middle",
+        "img":{
+            "data_src":"//i1.mifile.cn/f/i/18/blackshark2/no14-bg.jpg"
+        }
+    },
+    "section-no15":{
+    },
+    "pic_tool_src":[
+    ],
+    "pic_src":[
+        {
+            "name":"no5-b.png",
+            "src":"http://i1.mifile.cn/f/i/18/blackshark2/no5-b.png"
+        },
+        {
+            "name":"no6-l.png",
+            "src":"http://i1.mifile.cn/f/i/18/blackshark2/no6-l.png"
+        },
+        {
+            "name":"no6-r.png",
+            "src":"http://i1.mifile.cn/f/i/18/blackshark2/no6-r.png"
+        },
+        {
+            "name":"no14-l.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/blackshark2/no14-l.jpg"
+        },
+        {
+            "name":"no14-r.jpg",
+            "src":"http://i1.mifile.cn/f/i/18/blackshark2/no14-r.jpg"
+        }
+    ]
+}
+
