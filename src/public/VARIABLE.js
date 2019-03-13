@@ -137,42 +137,42 @@ export default {
       first: {
         id: '10001',
         type: '新品',
-        img: '../../../static/image/television/75.png',
+        img: PLACEHOLDER_IMAGE,
         name: '小米电视4 75英寸',
         price: '8999元'
       },
       second: {
         id: '10002',
         type: '热卖',
-        img: '../../../static/image/television/32.png',
+        img: PLACEHOLDER_IMAGE,
         name: '小米电视4A 32英寸',
         price: '899元'
       },
       third: {
         id: '10003',
         type: '热卖',
-        img: '../../../static/image/television/50.png',
+        img: PLACEHOLDER_IMAGE,
         name: '小米电视4A 43英寸青春版',
         price: '1399元'
       },
       fourth: {
         id: '10004',
         type: '热卖',
-        img: '../../../static/image/television/4a43.png',
+        img: PLACEHOLDER_IMAGE,
         name: '小米电视4A 50英寸',
         price: '1799元'
       },
       fifth: {
         id: '10005',
         type: '新品',
-        img: '../../../static/image/television/4a55.png',
+        img: PLACEHOLDER_IMAGE,
         name: '小米电视4A 55英寸',
         price: '2299元'
       },
       sixth: {
         id: '10006',
         type: '新品',
-        img: '../../../static/image/television/4a65555.png',
+        img: PLACEHOLDER_IMAGE,
         name: '查看全部',
         price: '查看全部'
       }

@@ -19,7 +19,7 @@
     <!--<brick-comment296x415></brick-comment296x415>-->
     <!--<brick-content-item></brick-content-item>-->
     <!--<brick-content-more></brick-content-more>-->
-    <brick-content></brick-content>
+    <!--<brick-content></brick-content>-->
     <!--<brick-video></brick-video>-->
     <!--<brick246x161></brick246x161>-->
     <!--<list-table></list-table>-->
@@ -27,7 +27,7 @@
     <!--<video-play-window></video-play-window>-->
     <!--<home-channel-item></home-channel-item>-->
     <!--<home-channel-left></home-channel-left>-->
-    <!--<home-channel></home-channel>-->
+    <home-channel></home-channel>
     <!--<segment-cellphone></segment-cellphone>-->
     <!--<segment-household></segment-household>-->
     <!--<segment-smart></segment-smart>-->
@@ -62,6 +62,7 @@
     <!--<img-bg-img-text-overview></img-bg-img-text-overview>-->
     <!--<img-img-text-overview></img-img-text-overview>-->
     <!--<overview-page></overview-page>-->
+    <!--<list-page></list-page>-->
   </div>
 </template>
 

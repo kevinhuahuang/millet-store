@@ -21,8 +21,9 @@
 <script>
 import RightBrick234x300 from '../brick/RightBrick234x300'
 import SegmentTitle from '../base/SegmentTitle'
-import dataJson from '@assets/json/main/mi.json'
+// import miJson from '@static/json/main/mi.json'
 import Brick234x300Group from '../brick/Brick234x300Group'
+// import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'SegmentAccessory',
   components: {Brick234x300Group, SegmentTitle, RightBrick234x300},
@@ -35,27 +36,52 @@ export default {
       dataRightEnd: [],
       linkArray: [],
       linkArrayHref: [],
-      linkIndex: 2
+      linkIndex: 2,
+      miData: null
     }
   },
   created: function () {
-    let data = dataJson['accessories']
-    let dataLeft = data['left']
-    this.dataLeft.push({'url': dataLeft[0]['url'], 'img': dataLeft[0]['image'], 'img_hd': dataLeft[0]['image_hd']})
-    this.dataLeft.push({'url': dataLeft[1]['url'], 'img': dataLeft[1]['image'], 'img_hd': dataLeft[1]['image_hd']})
-    this.dataRight = data['right']
-    for (let i = 0; i < this.dataRight.length; i++) {
-      this.linkArray.push(this.dataRight[i]['area_title'])
-      this.linkArrayHref.push(this.dataRight[i]['area_url'])
-      this.dataRightArray.push(this.dataRight[i]['items'])
-    }
+    // this.miData = miJson
+    // let data = this.miData['accessories']
+    // let dataLeft = data['left']
+    // this.dataLeft.push({'url': dataLeft[0]['url'], 'img': dataLeft[0]['image'], 'img_hd': dataLeft[0]['image_hd']})
+    // this.dataLeft.push({'url': dataLeft[1]['url'], 'img': dataLeft[1]['image'], 'img_hd': dataLeft[1]['image_hd']})
+    // this.dataRight = data['right']
+    // for (let i = 0; i < this.dataRight.length; i++) {
+    //   this.linkArray.push(this.dataRight[i]['area_title'])
+    //   this.linkArrayHref.push(this.dataRight[i]['area_url'])
+    //   this.dataRightArray.push(this.dataRight[i]['items'])
+    // }
   },
   mounted: function () {
+    this.getData(this)
   },
   methods: {
     getLinkIndex: function (index) {
       this.linkIndex = index
+    },
+    getData: function (host) {
+      this.axios.get('/miData').then(function (res) {
+        host.miData = res.data
+
+        let data = host.miData['accessories']
+        let dataLeft = data['left']
+        host.dataLeft = []
+        host.dataLeft.push({'url': dataLeft[0]['url'], 'img': dataLeft[0]['image'], 'img_hd': dataLeft[0]['image_hd']})
+        host.dataLeft.push({'url': dataLeft[1]['url'], 'img': dataLeft[1]['image'], 'img_hd': dataLeft[1]['image_hd']})
+        host.dataRight = data['right']
+        host.linkArray = []
+        host.linkArrayHref = []
+        host.dataRightArray = []
+        for (let i = 0; i < host.dataRight.length; i++) {
+          host.linkArray.push(host.dataRight[i]['area_title'])
+          host.linkArrayHref.push(host.dataRight[i]['area_url'])
+          host.dataRightArray.push(host.dataRight[i]['items'])
+        }
+      })
     }
+  },
+  props: {
   }
 }
 </script>

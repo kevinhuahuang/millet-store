@@ -128,7 +128,7 @@
 </template>
 
 <script>
-import dataJson from '@assets/json/overview/cellphone/blackshark.json'
+// import dataJson from '@static/json/overview/cellphone/blackshark.json'
 export default {
   name: 'CellphoneBlackShark',
   data () {
@@ -150,20 +150,20 @@ export default {
     }
   },
   created () {
-    this.indexData = dataJson['section_index']
-    this.videoData = dataJson['section_video']
-    this.screenData = dataJson['section_screen']
-    this.specialData = dataJson['section_special']
-    this.cameraData = dataJson['section_camera']
-    this.cpuData = dataJson['section_cpu']
-    this.coolingData = dataJson['section_cooling']
-    this.processImgData = dataJson['section_proceimg']
-    this.protectEyeData = dataJson['section_protecteyes']
-    this.micData = dataJson['section_micbiso']
-    this.antennaData = dataJson['section_antenna']
-    this.modeData = dataJson['section_sharkmodel']
-    this.dockData = dataJson['section_dock']
-    this.handlerData = dataJson['section_handler']
+    // this.indexData = dataJson['section_index']
+    // this.videoData = dataJson['section_video']
+    // this.screenData = dataJson['section_screen']
+    // this.specialData = dataJson['section_special']
+    // this.cameraData = dataJson['section_camera']
+    // this.cpuData = dataJson['section_cpu']
+    // this.coolingData = dataJson['section_cooling']
+    // this.processImgData = dataJson['section_proceimg']
+    // this.protectEyeData = dataJson['section_protecteyes']
+    // this.micData = dataJson['section_micbiso']
+    // this.antennaData = dataJson['section_antenna']
+    // this.modeData = dataJson['section_sharkmodel']
+    // this.dockData = dataJson['section_dock']
+    // this.handlerData = dataJson['section_handler']
   }
 }
 </script>

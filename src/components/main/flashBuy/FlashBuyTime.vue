@@ -2,7 +2,7 @@
   <div class="container">
     <div class="content">
       <div class="start_time">{{startTime}} 场</div>
-      <img src="@static/images/main/flashpurchase.png">
+      <img src="@assets/images/flashpurchase.png">
       <div class="notice">{{startOrEnd}}</div>
       <div class="time_remaining"> <!--下面几元素要写在一行-->
         <div class="hour">{{reHour}}</div><span class="sep">:</span><span class="minute">{{reMin}}</span><span class="sep">:</span><span class="second">{{reSec}}</span>

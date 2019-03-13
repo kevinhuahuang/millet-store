@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'ImgText1226x434',
   data () {
@@ -36,8 +37,8 @@ export default {
       default () {
         return [
           {
-            img_url: 'https://i8.mifile.cn/b2c-mimall-media/b8133772061204a88bc334001cd69b57.jpg?w=1708&h=868',
-            img_url_webp: '//i8.mifile.cn/v1/a1/fe3eefbb-8c66-917d-6dec-fb6372983885.webp?w=1708&h=868',
+            img_url: PLACEHOLDER_IMAGE,
+            img_url_webp: PLACEHOLDER_IMAGE,
             img_url_color: '#C4BFD0',
             product_id: '10000117',
             product_rebate: [],

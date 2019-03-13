@@ -14,8 +14,8 @@
 
 <script>
 import BrickContent from '../brick/BrickContent'
-import titleJSON from '@assets/json/main/content.json'
-import dataJSON from '@assets/json/main/mi.json'
+// import titleJson from '@static/json/main/content.json'
+// import miJson from '@static/json/main/mi.json'
 export default {
   name: 'SegmentContent',
   components: {BrickContent},
@@ -23,22 +23,61 @@ export default {
     return {
       contentData: [],
       titleArray: [],
-      dataArray: []
+      dataArray: [],
+      miData: null,
+      titleData: null,
+      isContentDataReady: false,
+      isTitleDataReady: false
     }
   },
   created () {
-    for (let key in dataJSON['content']) {
-      this.contentData.push(dataJSON['content'][key])
-    }
-    for (let key in titleJSON) {
-      this.titleArray.push(titleJSON[key])
-    }
-    for (let i = 0; i < this.contentData.length; i++) {
-      this.dataArray.push([this.contentData[i], this.titleArray[i]])
-    }
+    // this.miData = miJson
+    // this.titleData = titleJson
+    // for (let key in this.miData['content']) {
+    //   this.contentData.push(this.miData['content'][key])
+    // }
+    // for (let key in this.titleData) {
+    //   this.titleArray.push(this.titleData[key])
+    // }
+    // for (let i = 0; i < this.contentData.length; i++) {
+    //   this.dataArray.push([this.contentData[i], this.titleArray[i]])
+    // }
     // console.log(this.dataArray)
   },
-  mounted () {
+  mounted: function () {
+    this.getData(this)
+  },
+  methods: {
+    getData: function (host) {
+      this.axios.get('/miData').then(function (res) {
+        host.miData = res.data
+        host.contentData = []
+        for (let key in host.miData['content']) {
+          host.contentData.push(host.miData['content'][key])
+        }
+        host.isContentDataReady = true
+        host.mixJsonData()
+      })
+      this.axios.get('/contentData').then(function (res) {
+        host.titleData = res.data
+        host.titleArray = []
+        for (let key in host.titleData) {
+          host.titleArray.push(host.titleData[key])
+        }
+        host.isTitleDataReady = true
+        host.mixJsonData()
+      })
+    },
+    mixJsonData: function () {
+      if (this.isContentDataReady && this.isTitleDataReady) {
+        this.isContentDataReady = false
+        this.isTitleDataReady = false
+        this.dataArray = []
+        for (let i = 0; i < this.contentData.length; i++) {
+          this.dataArray.push([this.contentData[i], this.titleArray[i]])
+        }
+      }
+    }
   }
 }
 </script>

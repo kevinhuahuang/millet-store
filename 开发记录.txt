@@ -1,0 +1,133 @@
+记录1：
+  设计component时将图片url设置为占位图片placeHold的地址，而在请求的json文件中再设置对应正确的url地址。
+  当打开page时，读取json文件，然后根据json文件渲染指定的component, 并根据json文件请求图片。
+
+
+记录2：
+  根目录下的static/images文件夹内的Img文件夹放了200多M的图片，就算程序中没有调用这些图片，也会导致npm run dev时会耗费比较多的时间，会在asset optimization时卡顿一下。
+  当npm run build时，也会把这些图片都放到dist/static/images文件夹下，不管他们用不用得到
+  这个路径可以在build/webpack.dev.conf.js文件中的 new CopyWebpackPlugin([{ form: path.resolve(__dirname, '../static')  修改，'../static'修改为'../server/public'，dev与express共同这些资源文件
+  static 存放编译需要的静态文件（此项目前后端一起开发，此文件夹不存放文件，文件直接存放到server/public下，并修改webpack_dev_server指定的静态文件路径，修改后又引起了npm run dev变慢）
+
+
+记录3：
+  webpack编译时会把dist/static文件夹下所有的文件清空，然后再写入新的文件。
+  所以不要把不参于编译，主要用于服务器向前端发送的Josn文件与images文件放在dist/static。将它们放在server/public下
+
+
+记录4：
+注意，npm run build后，调试单个页面，比如cellphone时，直接点success listen: http://localhost:8081并不能打开cellphone网页。
+需要在网址后面加/cellphone。完整网页地址如下：http://localhost:8081/cellphone
+
+
+记录5：整理资源文件夹
+
+  知识点1 ：
+  dist文件夹路径可以修改，比如将编译后的文件放在server文件夹下，并将static文件夹改为assets
+  config/index.js中的  build： {index：指定模板index的目录（不修改）
+  assetsRoot: ../dist  这是资源文件的路径，修改为../server
+  assetsSubDirectory: static  修改为  assets
+  assetsPublicPath: ''  不修改（修改此处，编译出来的html文件中指定的css,jss文件路径名跟着会被修改）
+  编译后html文件路径在build/utils.js中的变量HTML_OUTPUT_PATH设置，var HTML_OUTPUT_PATH = ''
+  设置后
+  注意：此项目并不修改编译路径，只是将编译好内容拷贝到server文件夹指定的路径里
+
+  知识点2：
+  src/assets   webpack会处理此文件夹的内容，图片会放在dist/static/img/ 文件夹下，css，js等会编译进代码中
+  static    webpack会将文件夹的内容复制到dist/static下
+
+
+  步骤一：
+  在server目录下新建public文件夹
+  server
+    --public
+      --assets  将编译后的assets文件夹下的内容拷贝到这里
+      --images  存放图片，webpack_dev_server与express服务器共同调用
+      --json    存放json文件，webpack_dev_server与express服务器共同调用
+    --views     将编译后的html文件拷贝到这里
+
+  步骤二：
+  修改express的静态资源路径
+  服务器使用的是node.js + express,需要修改express访问资料文件的路径 server/app.js
+  app.use(express.static(path.resolve(__dirname, '../dist')))     // ../dist 修改为 ./server/public
+  服务器用到的资料文件都在此文件夹下，可以是它的子目录，不能是它的上级目录，如果图片url = '../images' 不会起作用。
+  '../images'  和 './images' 都会处理成 '/images'
+
+  修改webpack_dev_server静态资源路径
+  将npm run dev指向静态资源文件的路径指向server静态文件路径
+  config/index.js   module.exports = {  dev: {   assetsSubDirectory: 'static'   // static 改为 'server/public'
+
+  修改webpack_dev_server调用的index.html 路径
+   build: {
+      // Template for index.html
+      index: path.resolve(__dirname, '../server/public/index.html'), //npm run dev调用的html文件
+
+  注意：
+    npm run build编译出来的文件与服务器使用的文件相隔开，编译好的文件拷贝到服务器使用的文件夹内
+    html文件拷贝到server/views
+    assets文件夹拷贝到server/public
+
+
+记录6：
+  config/index.js   dev.assetsSubDirectory的设置
+  assetsPublicPath: '/',
+
+  1.操作1   显示
+  assetsSubDirectory：''
+  图片url = "/images/kind/cellphone/545a5b5f0cb6cff72c8abc13968a0adf.jpg"
+  图片放在/static/images，网页图片 显示
+
+  2.操作2  不显示
+  assetsSubDirectory: 'static' (默认)
+  图片url = "/images/kind/cellphone/545a5b5f0cb6cff72c8abc13968a0adf.jpg"
+  图片放在/static/images，网页图片 不显示
+
+  3.操作3  显示
+  assetsSubDirectory: 'static' (默认)
+  图片.url = "/static/images/kind/cellphone/545a5b5f0cb6cff72c8abc13968a0adf.jpg"
+  图片放在/static/images，网页图片 显示
+
+  4.操作4   不显示
+  assetsSubDirectory: '' (默认)
+  图片.url = "/static/images/kind/cellphone/545a5b5f0cb6cff72c8abc13968a0adf.jpg"
+  图片放在/static/images，网页图片 不显示
+
+  5.操作5   显示
+  assetsSubDirectory: 'assets' (默认)
+  图片.url = "/assets/images/kind/cellphone/545a5b5f0cb6cff72c8abc13968a0adf.jpg"
+  图片放在/static/images，网页图片 显示
+  路径/static/assets 并不存在
+
+
+总结：
+  1.图片放在那里npm run dev后可以读得到，
+  这个路径可以在build/webpack.dev.conf.js文件中的 new CopyWebpackPlugin([{ form: path.resolve(__dirname, '../static')  修改，
+  '../static'修改为'../server/public'，dev与express共同这些资源文件
+  npm run dev 或 npm run build时可以修改它指向一个空的文件，提高编译速度，编译完，再改回来
+
+  2.dev.assetsSubDirectory 这个路径的作用
+  它是虚拟的，针对它的操作也是虚拟的。
+
+  假设它设置为'static', npm run dev后。在根目录下创建static文件夹，并将CopyWebpackPlugin指定的from路径的内容（比如文件夹images）拷贝到这个文件夹。
+  然后访问这个文件夹内的图片的路径应该为 '/static/images/.....'
+
+  假设它设置为'', npm run dev后。将CopyWebpackPlugin指定的from路径的内容（比如文件夹images）直接拷贝到根目录下。
+  然后访问这个文件夹内的图片的路径应该为 'images/.....'
+
+
+
+记录7： "创建了vue项目后，npm run dev 失败",
+  关闭webStorm，重新打开，npm run build，再npm run dev。不成功，再 npm run build 再 npm run dev，不行多试几次
+
+记录8：Vue项目中index.html  main.js  App.vue  三个文件的关系
+  "index.html 文件入口 ",
+  "main.js 入口文件,主要作用是初始化vue实例并使用需要的插件",
+   "App.vue 主组件，页面内容都由它产生",
+  "npm run dev时调用的是main.js (entry: app: './src/main.js')"
+
+
+记录9： "title": "打包后，直接在文件夹里打开html，加载不了css与js文件",
+    "将build:{assetsPublicPath:'/' } 改为 build:{assetsPublicPath:'./' }, 也可以改为其它的"
+
+
+

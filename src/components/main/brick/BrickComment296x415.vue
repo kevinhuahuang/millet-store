@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'BrickComment296x415',
   data () {
@@ -34,8 +35,8 @@ export default {
           mat_id: '4361',
           sale_price: '449',
           origin_price: '',
-          image: '//i1.mifile.cn/a4/xmad_15094337975564_BSRIq.jpg',
-          image_hd: '//i1.mifile.cn/a4/xmad_15094338019638_QfFdE.jpg',
+          image: PLACEHOLDER_IMAGE,
+          image_hd: PLACEHOLDER_IMAGE,
           desc: '',
           sub_title: '',
           commodity_id: '1173700028',

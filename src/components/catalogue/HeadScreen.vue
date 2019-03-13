@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'HeadScreen',
   data () {
@@ -22,11 +23,11 @@ export default {
       default () {
         return {
           bg_img_color: '#FFFFFF',
-          bg_img_webp: 'https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/4001c5f180f2af7d811374a177be512d.jpg?w=5120&h=1878&bg=FFFFFF',
-          bg_img: 'https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/4001c5f180f2af7d811374a177be512d.jpg?w=5120&h=1878&bg=FFFFFF',
+          bg_img_webp: PLACEHOLDER_IMAGE,
+          bg_img: PLACEHOLDER_IMAGE,
           logo_img_color: '#FFFFFF',
-          logo_img_webp: 'https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/93bafaa5fb8f322cbc8f65cb287720ee.png?w=80&h=80&bg=FFFFFF',
-          logo_img: 'https://i8.mifile.cn/b2c-mimall-media/93bafaa5fb8f322cbc8f65cb287720ee.png?w=80&h=80&bg=FFFFFF',
+          logo_img_webp: PLACEHOLDER_IMAGE,
+          logo_img: PLACEHOLDER_IMAGE,
           action: {
             type: 'url',
             login: false,

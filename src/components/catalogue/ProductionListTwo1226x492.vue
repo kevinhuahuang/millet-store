@@ -10,6 +10,7 @@
 <script>
 import Brick606x482 from './Brick606x482'
 import Brick606x492 from './Brick606x492'
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'ProductionListTwo1226x492',
   components: {Brick606x492, Brick606x482},
@@ -29,8 +30,8 @@ export default {
           'btn_color': '#ea625b',
           'items': [
             {
-              'img_url': 'https://i8.mifile.cn/b2c-mimall-media/cbaba82b2dea90db0f5b01ed994fc119.jpg?w=1212&h=716',
-              'img_url_webp': '//i8.mifile.cn/v1/a1/fb373617-a32b-a183-edfe-549a615d0597.webp?w=1212&h=716',
+              'img_url': PLACEHOLDER_IMAGE,
+              'img_url_webp': PLACEHOLDER_IMAGE,
               'img_url_color': '#A997A3',
               'product_id': '8909',
               'product_rebate': {
@@ -56,8 +57,8 @@ export default {
               'btntxt': '立即购买'
             },
             {
-              'img_url': 'https://i8.mifile.cn/b2c-mimall-media/5c50bdc81439be902db6e34a89b785b9.jpg?w=1212&h=716',
-              'img_url_webp': '//i8.mifile.cn/v1/a1/78833a9e-83a4-a3bb-211d-d386e08c18e6.webp?w=1212&h=716',
+              'img_url': PLACEHOLDER_IMAGE,
+              'img_url_webp': PLACEHOLDER_IMAGE,
               'img_url_color': '#787878',
               'product_id': '5353',
               'product_rebate': {

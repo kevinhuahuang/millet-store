@@ -7,20 +7,20 @@
 </template>
 
 <script>
-import dataJson from '@assets/json/overview/cellphone/blackshark.json'
-// import dataJson from '@assets/json/overview/cellphone/blackshark2.json'
-// import dataJson from '@assets/json/overview/cellphone/max3.json'
-// import dataJson from '@assets/json/overview/cellphone/mi6x.json'
-// import dataJson from '@assets/json/overview/cellphone/mi8.json'
-// import dataJson from '@assets/json/overview/cellphone/mi8i.json'
-// import dataJson from '@assets/json/overview/cellphone/mi8ud.json'
-// import dataJson from '@assets/json/overview/cellphone/mi8youth.json'
-// import dataJson from '@assets/json/overview/cellphone/mix2s.json'
-// import dataJson from '@assets/json/overview/cellphone/mix3s.json'
-// import dataJson from '@assets/json/overview/cellphone/redmi6.json'
-// import dataJson from '@assets/json/overview/cellphone/redmi6a.json'
-// import dataJson from '@assets/json/overview/cellphone/redmi6pro.json'
-// import dataJson from '@assets/json/overview/cellphone/redminote5.json'
+// import dataJson from '@static/json/overview/cellphone/blackshark.json'
+// import dataJson from '@static/json/overview/cellphone/blackshark2.json'
+// import dataJson from '@static/json/overview/cellphone/max3.json'
+// import dataJson from '@static/json/overview/cellphone/mi6x.json'
+// import dataJson from '@static/json/overview/cellphone/mi8.json'
+// import dataJson from '@static/json/overview/cellphone/mi8i.json'
+// import dataJson from '@static/json/overview/cellphone/mi8ud.json'
+// import dataJson from '@static/json/overview/cellphone/mi8youth.json'
+// import dataJson from '@static/json/overview/cellphone/mix2s.json'
+// import dataJson from '@static/json/overview/cellphone/mix3s.json'
+// import dataJson from '@static/json/overview/cellphone/redmi6.json'
+// import dataJson from '@static/json/overview/cellphone/redmi6a.json'
+// import dataJson from '@static/json/overview/cellphone/redmi6pro.json'
+// import dataJson from '@static/json/overview/cellphone/redminote5.json'
 
 import OverviewSegment from './OverviewSegment'
 export default {
@@ -32,11 +32,11 @@ export default {
     }
   },
   created () {
-    for (let key in dataJson) {
-      if (dataJson[key]['type']) {
-        this.dataAry.push(dataJson[key])
-      }
-    }
+    // for (let key in dataJson) {
+    //   if (dataJson[key]['type']) {
+    //     this.dataAry.push(dataJson[key])
+    //   }
+    // }
   },
   mounted () {},
   methods: {},

@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'CellsAutoFill',
   data () {
@@ -51,8 +52,8 @@ export default {
                 'path': '',
                 'log_code': '313468pcchannelcells_auto_fill001023#t=normal&act=other&page=channel&page_id=3468&bid=3142382.1'
               },
-              'img_url': '//i8.mifile.cn/b2c-mimall-media/d0275829328e2bc388cabdd34357bf67.png',
-              'img_url_webp': '//i8.mifile.cn/v1/a1/09ad4458-510b-9f52-0741-bd638ad0def2.webp',
+              'img_url': PLACEHOLDER_IMAGE,
+              'img_url_webp': PLACEHOLDER_IMAGE,
               'img_url_color': '',
               'pc_url': ''
             }

@@ -19,19 +19,34 @@
 
 <script>
 import HomeChannelLeft from './HomeChannelLeft'
-import homeData from '@assets/json/main/homeChannel.json'
+// import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
+// import jsonData from '../../../../static/json/main/homeChannel.json'
 export default {
   name: 'HomeChannel',
   components: {HomeChannelLeft},
   data: function () {
     return {
-      rightData: null
+      rightData: null,
+      dataJson: null
     }
   },
   created: function () {
-    this.rightData = homeData['rightList']
+    // this.dataJson = jsonData
+    // this.rightData = this.dataJson['rightList']
+    // console.log(this.rightData)
   },
   mounted: function () {
+    this.getData(this)
+  },
+  methods: {
+    getData: function (host) {
+      this.axios.get('/homeData').then(function (res) {
+        host.dataJson = res.data
+        host.rightData = host.dataJson['rightList']
+      })
+    }
+  },
+  props: {
   }
 }
 </script>

@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'Gallery1226x621',
   data () {
@@ -78,8 +79,8 @@ export default {
             ad_position_id: 1089,
             w: 5120,
             h: 1240,
-            img_url: 'https://i8.mifile.cn/b2c-mimall-media/545a5b5f0cb6cff72c8abc13968a0adf.jpg?w=5120&h=1240&bg=0C1324',
-            img_url_webp: '//i8.mifile.cn/v1/a1/d2dd02f9-4209-d2ed-b788-7e50dbdadbe1.webp?w=5120&h=1240&bg=0C1324',
+            img_url: PLACEHOLDER_IMAGE,
+            img_url_webp: PLACEHOLDER_IMAGE,
             img_url_color: '#0C1324',
             category_key: '',
             action: {
@@ -96,8 +97,8 @@ export default {
             ad_position_id: 1091,
             w: 5120,
             h: 1240,
-            img_url: 'https://i8.mifile.cn/b2c-mimall-media/e56e83596263a461406da48e8786fc31.jpg?w=5120&h=1240&bg=FFFFFF',
-            img_url_webp: 'https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/e56e83596263a461406da48e8786fc31.jpg?w=5120&h=1240&bg=FFFFFF',
+            img_url: PLACEHOLDER_IMAGE,
+            img_url_webp: PLACEHOLDER_IMAGE,
             img_url_color: '#FFFFFF',
             category_key: '',
             action: {

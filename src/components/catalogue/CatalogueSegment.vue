@@ -2,6 +2,7 @@
   <div class="container">
     <div class="content">
       <component :is="type" :itemsProp="itemsData"></component>
+      <!--动态组件，采用那个组件，由父组件的数据来决定, 要显示的数据也由父组件传递进来-->
     </div>
   </div>
 </template>
@@ -17,7 +18,6 @@ import CellsAutoFill from './CellsAutoFill'
 import HeadScreen from './HeadScreen'
 import ProductionListTwo1226x492 from './ProductionListTwo1226x492'
 import ProductionListOne1226x434 from './ProductionListOne1226x434'
-// import dataJSON from '@assets/json/kind/cellphone.json'
 export default {
   name: 'CatalogueSegment',
   components: {

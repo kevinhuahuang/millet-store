@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'mainBanner',
   data: function () {
@@ -27,8 +28,8 @@ export default {
           mat_id: '5642',
           sale_price: '',
           origin_price: '',
-          image: '//i1.mifile.cn/a4/xmad_15429425303985_GNKZo.jpg',
-          image_hd: '//i1.mifile.cn/a4/xmad_1542942534056_QCOVk.jpg',
+          image: PLACEHOLDER_IMAGE,
+          image_hd: PLACEHOLDER_IMAGE,
           desc: '',
           sub_title: '',
           commodity_id: '0',

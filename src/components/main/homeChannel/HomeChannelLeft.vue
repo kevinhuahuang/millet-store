@@ -9,20 +9,31 @@
 
 <script>
 import HomeChannelItem from './HomeChannelItem'
-import homeData from '@assets/json/main/homeChannel.json'
+// import homeJson from '@static/json/main/homeChannel.json'
 export default {
   name: 'HomeChannelLeft',
   components: {HomeChannelItem},
   data: function () {
     return {
       channelData: null,
-      iconArray: ['icon-shouji', 'icon-zhuyetuangou', 'icon-facebook', 'icon-cucunqia', 'icon-ai49', 'icon-chongzhi']
+      iconArray: ['icon-shouji', 'icon-zhuyetuangou', 'icon-facebook', 'icon-cucunqia', 'icon-ai49', 'icon-chongzhi'],
+      homeData: null
     }
   },
   created: function () {
-    this.channelData = homeData['leftList']
+    // this.homeData = homeJson
+    // this.channelData = this.homeData['leftList']
   },
   mounted: function () {
+    this.getData(this)
+  },
+  methods: {
+    getData: function (host) {
+      this.axios.get('/homeData').then(function (res) {
+        host.homeData = res.data
+        host.channelData = host.homeData['leftList']
+      })
+    }
   }
 }
 </script>

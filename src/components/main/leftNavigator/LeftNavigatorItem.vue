@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'LeftNavigatorItem',
   props: {
@@ -18,8 +19,8 @@ export default {
         return {
           title: '米家激光投影电视',
           url: 'https://www.mi.com/laser-projection/',
-          img: '//i1.mifile.cn/f/i/g/2015/cn-index/14000000000.png',
-          img_hd: '//i1.mifile.cn/f/i/g/2015/cn-index/14000000000.png',
+          img: PLACEHOLDER_IMAGE,
+          img_hd: PLACEHOLDER_IMAGE,
           is_buy: 0,
           buy_url: '',
           list_image: '',

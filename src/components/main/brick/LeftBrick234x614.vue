@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'LeftBrick234x614',
   data: function () {
@@ -26,8 +27,8 @@ export default {
           mat_id: '5647',
           sale_price: '3299',
           origin_price: '',
-          image: '//i1.mifile.cn/a4/xmad_15407792204208_jtrJc.jpg',
-          image_hd: '//i1.mifile.cn/a4/xmad_15407792230672_OYZTw.jpg',
+          image: PLACEHOLDER_IMAGE,
+          image_hd: PLACEHOLDER_IMAGE,
           desc: '',
           sub_title: '',
           commodity_id: '1184200013',

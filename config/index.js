@@ -5,10 +5,10 @@
 const path = require('path')
 
 module.exports = {
-  dev: {
+  dev: { // 调试 npm run dev 的配置
 
     // Paths
-    assetsSubDirectory: 'static',
+    assetsSubDirectory: '',
     assetsPublicPath: '/',
     proxyTable: {},
 
@@ -43,20 +43,20 @@ module.exports = {
     cssSourceMap: true
   },
 
-  build: {
+  build: { // npm run build 编译的配置
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    index: path.resolve(__dirname, '../dist/index.html'), //npm run dev调用的html文件
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static',
-    assetsPublicPath: path.resolve(__dirname, '../dist'),
+    assetsRoot: path.resolve(__dirname, '../dist'), //打包文件存放的路径
+    assetsSubDirectory: 'assets', //除html文件外的静态资源文件存放路径
+    assetsPublicPath: '/', //打包后，html文件引用资源的的相对地址
+    // html文件内  src= assetsPublicPath + assetsSubDirectory
 
     /**
      * Source Maps
      */
-
-    productionSourceMap: true,
+    productionSourceMap: false,
     // https://webpack.js.org/configuration/devtool/#production
     devtool: '#source-map',
 

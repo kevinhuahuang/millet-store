@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'BrickContentMore',
   data () {
@@ -24,7 +25,7 @@ export default {
         return {
           title: '图书',
           style: 'orange',
-          image: 'https://s01.mifile.cn/i/index/more-duokan.jpg',
+          image: PLACEHOLDER_IMAGE,
           url: 'http://www.duokan.com/list/1-1?from=xiaomi',
           desc: '海量好书，享受精品阅读时光 漂亮的中文排版，千万读者选择！',
           text: '多看阅读'

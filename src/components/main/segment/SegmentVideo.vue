@@ -15,7 +15,7 @@
 
 <script>
 import BrickVideo from '../brick/BrickVideo'
-import videoJSON from '@assets/json/main/mi.json'
+// import miJson from '@static/json/main/mi.json'
 import VideoPlayWindow from '../base/VideoPlayWindow'
 export default {
   name: 'SegmentVideo',
@@ -25,14 +25,17 @@ export default {
       videoArray: null,
       isVideoShow: false,
       curIndex: 0,
-      coverRef: 'coverRef'
+      coverRef: 'coverRef',
+      miData: null
     }
   },
   created () {
-    this.videoArray = videoJSON['video']
+    // this.miData = miJson
+    // this.videoArray = this.miData['video']
   },
-  mounted () {
+  mounted: function () {
     this.coverRef = this.$refs.coverRef
+    this.getData(this)
   },
   methods: {
     controlVideo (isShow, index) {
@@ -45,6 +48,12 @@ export default {
         this.coverRef.style.height = 0
       }
       this.isVideoShow = isShow
+    },
+    getData: function (host) {
+      this.axios.get('/miData').then(function (res) {
+        host.miData = res.data
+        host.videoArray = host.miData['video']
+      })
     }
   }
 }

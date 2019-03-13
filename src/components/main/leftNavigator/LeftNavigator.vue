@@ -35,8 +35,9 @@
 
 <script>
 import LeftNavigatorTable from './LeftNavigatorTable'
-import tableData from '@assets/json/main/navLeft.json'
-import sliderData from '@assets/json/main/slider.json'
+// import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
+// import tableJson from '@static/json/main/navLeft.json'
+// import sliderJson from '@static/json/main/slider.json'
 export default {
   name: 'LeftNavigator',
   components: {LeftNavigatorTable},
@@ -60,23 +61,19 @@ export default {
       dataArray: [],
       sliderArray: [],
       backgroundArray: [],
-      sliderCanvas: null
+      sliderCanvas: null,
+      tableJsonData: null,
+      sliderJsonData: null
     }
   },
   created: function () {
-    Object.keys(tableData).forEach(key => {
-      this.tableArray.push(tableData[key])
-      this.keyArray.push([this.tableArray[this.tableArray.length - 1]['data']['title'], this.tableArray[this.tableArray.length - 1]['data']['url']])
-      this.dataArray.push(this.tableArray[this.tableArray.length - 1]['right'])
-    })
-    this.tableData = this.dataArray[0] // 默认的初始值
-
-    Object.keys(sliderData).forEach(key => {
-      this.sliderArray.push(sliderData[key])
-    })
+    // this.tableJsonData = tableJson
+    // this.sliderJsonData = sliderJson
+    // this.dispatchJsonData()
     // console.log(this.keyArray)
   },
   mounted: function () {
+    this.getData(this)
     this.navigatorContent = this.$refs.navigator_content
     this.leftNavigator = this.$refs.left_navigator
     this.srcOption = 0
@@ -84,6 +81,43 @@ export default {
     this.renewBackgroundImage(this.srcOption)
   },
   methods: {
+    getData: function (host) {
+      this.axios.get('/navLeftData').then(function (res) {
+        host.tableJsonData = res.data
+        host.tableArray = []
+        host.keyArray = []
+        host.dataArray = []
+        Object.keys(host.tableJsonData).forEach(key => {
+          host.tableArray.push(host.tableJsonData[key])
+          host.keyArray.push([host.tableArray[host.tableArray.length - 1]['data']['title'], host.tableArray[host.tableArray.length - 1]['data']['url']])
+          host.dataArray.push(host.tableArray[host.tableArray.length - 1]['right'])
+        })
+        host.tableData = host.dataArray[0] // 默认的初始值
+      })
+
+      this.axios.get('/sliderData').then(function (res) {
+        host.sliderJsonData = res.data
+        host.sliderArray = []
+        Object.keys(host.sliderJsonData).forEach(key => {
+          host.sliderArray.push(host.sliderJsonData[key])
+        })
+        host.navigatorContent.style.backgroundImage = 'url(' + host.sliderArray[host.srcOption]['img'] + ')'
+        console.log('url(' + host.sliderArray[host.srcOption]['img'] + ')')
+        host.mainHref = host.sliderArray[host.srcOption]['url']
+      })
+    },
+    dispatchJsonData () {
+      Object.keys(this.tableJsonData).forEach(key => {
+        this.tableArray.push(this.tableJsonData[key])
+        this.keyArray.push([this.tableArray[this.tableArray.length - 1]['data']['title'], this.tableArray[this.tableArray.length - 1]['data']['url']])
+        this.dataArray.push(this.tableArray[this.tableArray.length - 1]['right'])
+      })
+      this.tableData = this.dataArray[0] // 默认的初始值
+
+      Object.keys(this.sliderJsonData).forEach(key => {
+        this.sliderArray.push(this.sliderJsonData[key])
+      })
+    },
     leftShift (e) {
       this.shiftSrc(e, true)
     },
@@ -102,6 +136,7 @@ export default {
     },
     renewBackgroundImage (option) {
       this.navigatorContent.style.backgroundImage = 'url(' + this.sliderArray[option]['img'] + ')'
+      // console.log('url(' + this.sliderArray[option]['img'] + ')')
       this.mainHref = this.sliderArray[option]['url']
     },
     renewListWidth: function (len) {

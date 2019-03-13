@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container_more">
     <div class="content">
       <div class="left_area">
         <div class="text_area">
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style scoped>
-  .container {
+  .container_more {
     width: 234px;
     height: 143px;
     background: white;

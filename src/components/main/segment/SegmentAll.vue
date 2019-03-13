@@ -1,15 +1,5 @@
 <template>
     <div class="container">
-      <!--<segment-cellphone></segment-cellphone>-->
-      <!--<segment-household></segment-household>-->
-      <!--<segment-smart></segment-smart>-->
-      <!--<segment-match></segment-match>-->
-      <!--<segment-accessory></segment-accessory>-->
-      <!--<segment-around></segment-around>-->
-      <!--<SegmentRecommend></SegmentRecommend>-->
-      <!--<segment-comment></segment-comment>-->
-      <!--<segment-content></segment-content>-->
-      <!--<segment-video></segment-video>-->
       <Header></Header>
       <header-navigator style="z-index: 1"></header-navigator>
       <left-navigator></left-navigator>

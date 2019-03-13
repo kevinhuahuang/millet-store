@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'BrickVideo',
   data () {
@@ -40,8 +41,8 @@ export default {
           mat_id: '5419',
           sale_price: '',
           origin_price: '',
-          image: '//i1.mifile.cn/a4/xmad_15318974928021_cthgC.jpg',
-          image_hd: '//i1.mifile.cn/a4/xmad_15318974954364_lXasR.jpg',
+          image: PLACEHOLDER_IMAGE,
+          image_hd: PLACEHOLDER_IMAGE,
           desc: '小米创业8年内部纪录片（手机篇）',
           sub_title: '',
           commodity_id: '0',
@@ -56,7 +57,7 @@ export default {
           mivideo: {
             name: 'u4e00u56e2u706b',
             desc: 'u5c0fu7c73u521bu4e1a8u5e74u5185u90e8u7eaau5f55u7247uff08u624bu673au7bc7uff09',
-            image_url: 'https://i8.mifile.cn/b2c-mimall-media/e0a27677f28572b6fa8dfcf5677d6499.jpeg',
+            image_url: PLACEHOLDER_IMAGE,
             sd_url: 'https://v.mifile.cn/b2c-mimall-media/c2cb94c9485243e1767d43268fb90820.mp4',
             hd_url: 'https://v.mifile.cn/b2c-mimall-media/c2cb94c9485243e1767d43268fb90820.mp4'
           },

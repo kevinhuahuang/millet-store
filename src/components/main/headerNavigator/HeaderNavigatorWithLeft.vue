@@ -3,11 +3,11 @@
     <div class="header"> <!--宽度固定 水平居中-->
       <div class="header_content">
         <div class="left">
-          <img style="display:inline" src="@static/images/logo.jpg"/>
+          <img style="display:inline" src="@assets/images/logo.jpg"/>
         </div>
         <div class="middle">
           <div class="commodity_content">
-            <a class="navigator_item" @mouseenter="leftCommodityHover" @mouseleave="leftCommodityOut">全部商品分类</a>
+            <a class="navigator_item" @mouseenter="leftCommodityHover" @mouseleave="leftCommodityOut" href="/list">全部商品分类</a>
             <a v-for="(key, index) in listArray" v-bind:key="index"
                @mouseenter="hoverOperate(index)"
                @mouseleave="mouseOutOperate">
@@ -30,9 +30,10 @@
 </template>
 
 <script>
-import listData from '../../../assets/json/main/navHeader.json'
+// import jsonData from '@static/json/main/navHeader.json'
 import HeaderNavigatorItemList from './HeaderNavigatorItemList.vue'
 import LeftNavigatorPopup from '../leftNavigator/LeftNavigatorPopup'
+// import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'HeaderNavigatorWithLeft',
   components: {LeftNavigatorPopup, HeaderNavigatorItemList},
@@ -51,22 +52,39 @@ export default {
       isLeftCommodityHover: false,
       isLeftCommodityOut: false,
       isLeftNavigatorOut: false,
-      isLeftNavigatorHover: false
+      isLeftNavigatorHover: false,
+      dataJson: null
     }
   },
-  created: function () { // mounted 前把数据准备好
-    this.displayArea = this.$refs.show
-    Object.keys(listData).forEach(key => { // JSON无length属性，for in会遍历继承属性，虽然它并没有继承属性
-      this.listArray.push(key)
-      this.commodityData.push(listData[key])
-    })
-    this.listArray.splice(this.listArray.length - 2, 2) // 删除后面两个子项
-    this.sixCommodity = listData[this.listArray[0]]
+  created: function () { // mounted 前把数据准备好 2019_03_09改为，数据由服务器提供
+    // this.dataJson = jsonData
+    // this.dispatchJsonData()
   },
   mounted: function () {
-    // console.log(this.listArray)
+    this.getData(this)
   },
   methods: {
+    getData: function (host) {
+      this.axios.get('/navHeaderData').then(function (res) {
+        host.dataJson = res.data
+        host.displayArea = host.$refs.show
+        Object.keys(host.dataJson).forEach(key => { // JSON无length属性，for in会遍历继承属性，虽然它并没有继承属性
+          host.listArray.push(key)
+          host.commodityData.push(host.dataJson[key])
+        })
+        host.listArray.splice(host.listArray.length - 2, 2) // 删除后面两个子项
+        host.sixCommodity = host.dataJson[host.listArray[0]]
+      })
+    },
+    dispatchJsonData: function () {
+      this.displayArea = this.$refs.show
+      Object.keys(this.dataJson).forEach(key => { // JSON无length属性，for in会遍历继承属性，虽然它并没有继承属性
+        this.listArray.push(key)
+        this.commodityData.push(this.dataJson[key])
+      })
+      this.listArray.splice(this.listArray.length - 2, 2) // 删除后面两个子项
+      this.sixCommodity = this.dataJson[this.listArray[0]]
+    },
     hoverOperate: function (type) {
       this.commodityType = type
       this.$refs.sixcommodity.style.height = '236px'
@@ -126,7 +144,9 @@ export default {
   },
   watch: {
     commodityType (curVal, oldVal) {
-      this.sixCommodity = listData[this.listArray[curVal]]
+      if (Object.keys(this.dataJson).length > 0) {
+        this.sixCommodity = this.dataJson[this.listArray[curVal]]
+      }
     }
   }
 }

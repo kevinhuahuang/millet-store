@@ -7,7 +7,7 @@
       </div>
       <div class="content_inside">
         <div class="left_area">
-          <left-brick234x614 class="focuseable"></left-brick234x614>
+          <left-brick234x614 class="focuseable" :commodity="cellDataLeft"></left-brick234x614>
         </div>
         <div class="right_area">
           <right-brick234x300 v-for="(key, index) in cellDataArray" v-bind:key="index" :commodity="key" class="focuseable" :is-comment=false></right-brick234x300>
@@ -20,7 +20,7 @@
 <script>
 import RightBrick234x300 from '../brick/RightBrick234x300'
 import LeftBrick234x614 from '../brick/LeftBrick234x614'
-import phoneData from '@assets/json/main/mi.json'
+// import miJson from '@static/json/main/mi.json'
 import SegmentTitle from '../base/SegmentTitle'
 export default {
   name: 'SegmentCellphone',
@@ -31,18 +31,31 @@ export default {
       cellDataLeft: {},
       cellDataUrl: {},
       cellDataArray: [],
-      linkArray: ['查看全部']
+      linkArray: ['查看全部'],
+      dataJson: null,
+      miData: null
     }
   },
   created: function () {
-    this.cellData = phoneData['phone']
-    this.cellDataLeft = this.cellData['left'][0]
-    this.cellDataUrl = this.cellData['right'][0]['area_url']
-    this.cellDataArray = this.cellData['right'][0]['items']
+    // this.miData = miJson
+    // this.cellData = this.miData['phone']
+    // this.cellDataLeft = this.cellData['left'][0]
+    // this.cellDataUrl = this.cellData['right'][0]['area_url']
+    // this.cellDataArray = this.cellData['right'][0]['items']
   },
   mounted: function () {
+    this.getData(this)
   },
   methods: {
+    getData: function (host) {
+      this.axios.get('/miData').then(function (res) {
+        host.miData = res.data
+        host.cellData = host.miData['phone']
+        host.cellDataLeft = host.cellData['left'][0]
+        host.cellDataUrl = host.cellData['right'][0]['area_url']
+        host.cellDataArray = host.cellData['right'][0]['items']
+      })
+    }
   }
 }
 </script>

@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import listData from '@assets/json/main/recommend.json'
+// import miJson from '@static/json/main/recommend.json'
 import BrickRecommend from '../brick/BrickRcommend'
 export default {
   name: 'SegmentRecommend',
@@ -38,20 +38,17 @@ export default {
       itemDistance: 248, // 14 + 234
       itemIndex: 0,
       isLeftEnd: true,
-      isRightEnd: false
+      isRightEnd: false,
+      miData: null
     }
   },
   created: function () { /* 不要在beforeCreate时调用 */
-    this.listDataArray = listData['data']
-    this.itemLength = this.listDataArray.length
+    // this.miData = miJson
+    // this.listDataArray = this.miData['data']
+    // this.itemLength = this.listDataArray.length
   },
   mounted: function () {
-    this.commodityListRef = this.$refs.commodityListRef
-    this.leftMoveRef = this.$refs.leftMoveRef
-    this.leftMoveRef.style.opacity = '0.4'
-    this.rightMoveRef = this.$refs.rightMoveRef
-    this.maxWidth = (14 + 234) * this.itemLength - 14
-    this.commodityListRef.style.width = this.maxWidth + 'px'
+    this.getData(this)
     // console.log(this.leftMoveRef.before)
   },
   methods: {
@@ -101,6 +98,20 @@ export default {
     },
     rightMoveLeave: function () {
       this.rightMoveRef.style.cursor = 'default'
+    },
+    getData: function (host) {
+      this.axios.get('/recommendData').then(function (res) {
+        host.miData = res.data
+        host.listDataArray = host.miData['data']
+        host.itemLength = host.listDataArray.length
+
+        host.commodityListRef = host.$refs.commodityListRef
+        host.leftMoveRef = host.$refs.leftMoveRef
+        host.leftMoveRef.style.opacity = '0.4'
+        host.rightMoveRef = host.$refs.rightMoveRef
+        host.maxWidth = (14 + 234) * host.itemLength - 14
+        host.commodityListRef.style.width = host.maxWidth + 'px'
+      })
     }
   },
   watch: {
@@ -137,7 +148,7 @@ export default {
     left: 0;
     right: 0;
     width: $WIDTH;
-    height: 450px;
+    height: 370px;
     background-color: #f5f5f5
   }
   .content_area {

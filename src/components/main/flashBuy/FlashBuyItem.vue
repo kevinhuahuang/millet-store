@@ -22,7 +22,7 @@
 </template>
 
 <script>
-// import {PLACEHOLDER_IMAGE} from '@public/CONSTANT.js'
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'FlashBuyItem',
   props: {
@@ -37,9 +37,9 @@ export default {
           seckill_type: 'seckill',
           goods_price: '599',
           seckill_Price: '299.5',
-          discount_img: 'https://i8.mifile.cn/b2c-mimall-media/c8e1169e2a209675148e8613fe3e2972.png',
-          img: 'https://i8.mifile.cn/b2c-mimall-media/c8e1169e2a209675148e8613fe3e2972.png',
-          pc_img: 'https://i8.mifile.cn/a1/pms_1518059587.09493935.jpg',
+          discount_img: PLACEHOLDER_IMAGE,
+          img: PLACEHOLDER_IMAGE,
+          pc_img: PLACEHOLDER_IMAGE,
           label_text: '5折秒杀',
           is_test: '0',
           action: {

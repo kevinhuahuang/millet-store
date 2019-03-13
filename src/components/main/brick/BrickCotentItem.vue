@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'BrickContentItem',
   data () {
@@ -32,8 +33,8 @@ export default {
           mat_id: '2573',
           sale_price: '29.37元',
           origin_price: '',
-          image: '//i1.mifile.cn/a4/5e5da924-84e3-4959-9e25-5891cdf30757',
-          image_hd: '//i1.mifile.cn/a4/704c0f9a-4e85-431e-962d-b87dbb54e23f',
+          image: PLACEHOLDER_IMAGE,
+          image_hd: PLACEHOLDER_IMAGE,
           desc: '“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ ',
           sub_title: '',
           commodity_id: '0',

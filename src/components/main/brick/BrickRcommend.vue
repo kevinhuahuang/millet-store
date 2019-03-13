@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container_recommend">
     <div class="content">
       <a class="img_area" :href="'https://item.mi.com/' + commodity.commodityid + '.html'">
         <img :src="commodity.image">
@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'BrickRecommend',
   data: function () {
@@ -35,7 +36,7 @@ export default {
           name: '小米USB-C数据线 编织线版  （30cm）',
           price: '18.9',
           market_price: '18.9',
-          image: '//i1.mifile.cn/a1/pms_1541579531.40162942.jpg',
+          image: PLACEHOLDER_IMAGE,
           comments: '25',
           traceid: 'BlankRec-jR9+VBHvY/be6fJg1XQPsg==',
           logcode: 'reccom_Guesslike_0_0#eid=184:12:0:0:0:0:0:0:0:0&traceId=BlankRec-jR9+VBHvY/be6fJg1XQPsg==&pid=9062&bid=3038464.0&page=home',
@@ -62,7 +63,7 @@ export default {
     text-decoration: none;
     color: black;
   }
-  .container {
+  .container_recommend {
     width: 234px;
     height: 300px;
     background: #ffffff;
@@ -70,10 +71,12 @@ export default {
   }
   .content {
     position: relative;
+    margin-top: 0;
     width: inherit;
     height: inherit;
     background: #fefefe;
     text-align: center; /* 让子元素img居中*/
+    border: 1px solid transparent; /* 必须，否则content相对于container下移30多px, 原理不明*/
   }
   img {
     cursor: pointer;
@@ -111,7 +114,7 @@ export default {
     left: 0;
     right: 0;
     margin: auto;
-    bottom: 50px;
+    bottom: 20px;
     height: 20px;
     color: grey;
     font-size: 0.8rem;

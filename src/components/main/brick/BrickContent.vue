@@ -19,6 +19,7 @@
 <script>
 import BrickContentItem from './BrickCotentItem'
 import BrickContentMore from './BrickContentMore'
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'BrickContent',
   components: {BrickContentMore, BrickContentItem},
@@ -97,8 +98,8 @@ export default {
             mat_id: '2573',
             sale_price: '29.37元',
             origin_price: '',
-            image: '//i1.mifile.cn/a4/5e5da924-84e3-4959-9e25-5891cdf30757',
-            image_hd: '//i1.mifile.cn/a4/704c0f9a-4e85-431e-962d-b87dbb54e23f',
+            image: PLACEHOLDER_IMAGE,
+            image_hd: PLACEHOLDER_IMAGE,
             desc: '“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ ',
             sub_title: '',
             commodity_id: '0',
@@ -121,8 +122,8 @@ export default {
             mat_id: '2572',
             sale_price: '17.99元',
             origin_price: '',
-            image: '//i1.mifile.cn/a4/61e1385e-54de-48f3-8717-5e4f4b1cdd14',
-            image_hd: '//i1.mifile.cn/a4/d5c049a6-eb3a-4b7e-8eb5-9e1a8229b68f',
+            image: PLACEHOLDER_IMAGE,
+            image_hd: PLACEHOLDER_IMAGE,
             desc: '畅销作家大冰2016年新书！讲给你听，好吗好的！',
             sub_title: '',
             commodity_id: '0',
@@ -144,7 +145,7 @@ export default {
         return {
           title: '图书',
           style: 'orange',
-          image: 'https://s01.mifile.cn/i/index/more-duokan.jpg',
+          image: PLACEHOLDER_IMAGE,
           url: 'http://www.duokan.com/list/1-1?from=xiaomi',
           desc: '海量好书，享受精品阅读时光 漂亮的中文排版，千万读者选择！',
           text: '多看阅读'

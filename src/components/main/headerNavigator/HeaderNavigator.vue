@@ -3,7 +3,7 @@
     <div class="header"> <!--宽度固定 水平居中-->
       <div class="header_content">
         <div class="left">
-          <img style="display:inline" src="@static/images/logo.jpg"/>
+          <img style="display:inline" src="@assets/images/logo.jpg"/>
         </div>
         <div class="middle">
           <div class="commodity_content">
@@ -26,8 +26,9 @@
 </template>
 
 <script>
-import listData from '../../../assets/json/main/navHeader.json'
+// import jsonData from '@static/json/main/navHeader.json'
 import HeaderNavigatorItemList from './HeaderNavigatorItemList.vue'
+// import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'HeaderNavigator',
   components: {HeaderNavigatorItemList},
@@ -41,22 +42,29 @@ export default {
       isNavigatorHover: false,
       isNavigatorOut: true,
       isListOut: false,
-      isListHover: false
+      isListHover: false,
+      dataJson: null
     }
   },
   created: function () { // mounted 前把数据准备好
-    this.displayArea = this.$refs.show
-    Object.keys(listData).forEach(key => { // JSON无length属性，for in会遍历继承属性，虽然它并没有继承属性
-      this.listArray.push(key)
-      this.commodityData.push(listData[key])
-    })
-    this.listArray.splice(this.listArray.length - 2, 2) // 删除后面两个子项
-    this.sixCommodity = listData[this.listArray[0]]
+    // this.dataJson = jsonData
+    // this.dispatchJsonData()
+    console.log('for test')
   },
   mounted: function () {
+    this.getData(this)
     // console.log(this.listArray)
   },
   methods: {
+    dispatchJsonData: function () {
+      this.displayArea = this.$refs.show
+      Object.keys(this.dataJson).forEach(key => { // JSON无length属性，for in会遍历继承属性，虽然它并没有继承属性
+        this.listArray.push(key)
+        this.commodityData.push(this.dataJson[key])
+      })
+      this.listArray.splice(this.listArray.length - 2, 2) // 删除后面两个子项
+      this.sixCommodity = this.dataJson[this.listArray[0]]
+    },
     hoverOperate: function (type) {
       this.commodityType = type
       this.$refs.sixcommodity.style.height = '234px'
@@ -79,18 +87,30 @@ export default {
       this.isListOut = true
       setTimeout(this.hideList, 100) // 延时100毫秒再关闭
     },
-    hideList () {
+    hideList: function () {
       // console.log(this.isListOut + ' : ' + this.isNavigatorOut)
       if (this.isListOut && this.isNavigatorOut) {
         this.$refs.sixcommodity.style.height = '0'
       }
+    },
+    getData: function (host) {
+      this.axios.get('/navHeaderData').then(function (res) {
+        host.dataJson = res.data
+        host.displayArea = host.$refs.show
+        Object.keys(host.dataJson).forEach(key => { // JSON无length属性，for in会遍历继承属性，虽然它并没有继承属性
+          host.listArray.push(key)
+          host.commodityData.push(host.dataJson[key])
+        })
+        host.listArray.splice(host.listArray.length - 2, 2) // 删除后面两个子项
+        host.sixCommodity = host.dataJson[host.listArray[0]]
+      })
     }
   },
   props: {
   },
   watch: {
     commodityType (curVal, oldVal) {
-      this.sixCommodity = listData[this.listArray[curVal]]
+      this.sixCommodity = this.dataJson[this.listArray[curVal]]
     }
   }
 }

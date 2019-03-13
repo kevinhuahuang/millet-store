@@ -1,0 +1,15 @@
+调试 npm run dev
+1.调试指定的page, 比如cellphone
+var myFileName = 'cellphone' // 指定要编译的文件名 默认index, 可改为cellphone  dev用到 build未用到
+var myCurFilePath = '../src/pages/kind/cellphone' // 编译cellphone下的所有文件
+
+
+========================================================================================================================
+编译 npm run build
+1.编译指定page,比如cellphone
+var myCurFilePath = '../src/pages/kind/cellphone' // 编译cellphone下的所有文件
+
+
+2.编译所有pages
+1.修改文件 build/utils.js
+var myCurFilePath = '../src/pages/' // 编译pages下的所有文件

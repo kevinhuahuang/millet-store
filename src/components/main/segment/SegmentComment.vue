@@ -15,22 +15,31 @@
 </template>
 
 <script>
-import dataJSON from '@assets/json/main/mi.json'
+// import miJson from '@static/json/main/mi.json'
 import BrickComment296x415 from '../brick/BrickComment296x415'
 export default {
   name: 'SegmentComment',
   components: {BrickComment296x415},
   data: function () {
     return {
-      commentData: null
+      commentData: null,
+      miData: null
     }
   },
   created: function () { /* 不要在beforeCreate时调用 */
-    this.commentData = dataJSON['comment']
+    // this.miData = miJson
+    // this.commentData = this.miData['comment']
   },
   mounted: function () {
+    this.getData(this)
   },
   methods: {
+    getData: function (host) {
+      this.axios.get('/miData').then(function (res) {
+        host.miData = res.data
+        host.commentData = host.miData['comment']
+      })
+    }
   },
   watch: {
   }

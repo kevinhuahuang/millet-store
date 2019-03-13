@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 import Brick400x376 from './Brick400x376'
 export default {
   name: 'ListThreeType1226x376',
@@ -22,8 +23,8 @@ export default {
       default () {
         return [
           {
-            'img_url': '//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/10b5f3b4c06874fa919a27661d1e7394.jpg?w=1080&h=720',
-            'img_url_webp': '//i8.mifile.cn/v1/a1/7c649660-1c0b-1ba1-17cb-a4f7c70b0de4.webp?w=1080&h=720',
+            'img_url': PLACEHOLDER_IMAGE,
+            'img_url_webp': PLACEHOLDER_IMAGE,
             'img_url_color': '#EADCDA',
             'product_id': '3980',
             'product_rebate': [
@@ -43,8 +44,8 @@ export default {
             'pc_url': '//item.mi.com/1162600048.html'
           },
           {
-            'img_url': '//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/5782470ae075a6e48c44150830f3ca23.jpg?w=1080&h=720',
-            'img_url_webp': '//i8.mifile.cn/v1/a1/bb5edf64-ff1f-6f48-ba02-9680f7343b86.webp?w=1080&h=720',
+            'img_url': PLACEHOLDER_IMAGE,
+            'img_url_webp': PLACEHOLDER_IMAGE,
             'img_url_color': '#EBEBEA',
             'product_id': '3886',
             'product_rebate': [
@@ -64,8 +65,8 @@ export default {
             'pc_url': '//item.mi.com/1162400011.html'
           },
           {
-            'img_url': '//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d43c053f591e1281b8bdeddcaf4e26c1.jpg?w=1080&h=720',
-            'img_url_webp': '//i8.mifile.cn/v1/a1/eab67d0c-40fe-fd7b-9a9c-163153fa5e3e.webp?w=1080&h=720',
+            'img_url': PLACEHOLDER_IMAGE,
+            'img_url_webp': PLACEHOLDER_IMAGE,
             'img_url_color': '#E5E6E7',
             'product_id': '4662',
             'product_rebate': [

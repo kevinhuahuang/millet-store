@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
+// import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'HeaderNavigatorItem',
   data () {
@@ -34,7 +34,7 @@ export default {
         return {
           url: 'https://www.mi.com/mix3/',
           title: '小米MIX 3',
-          img: PLACEHOLDER_IMAGE,
+          img: '/src/assets/images/placeholder-220110X110.png',
           flag: '处理器',
           price: '3299元起'
         }

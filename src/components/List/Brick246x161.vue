@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container_item">
     <div class="content">
       <a  class="img" :href="commodity.url"><img :src="commodity.img"></a>
       <a class="title"  :href="commodity.url">{{commodity.product_name}}</a>
@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'Brick246x161',
   data () {
@@ -20,9 +21,9 @@ export default {
       default () {
         return {
           url: 'https://www.mi.com/mix3/',
-          img: '//i1.mifile.cn/f/i/g/2015/cn-index/mix3-140.png',
+          img: PLACEHOLDER_IMAGE,
           product_name: '小米MIX 3',
-          srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/mix3-140.png'
+          srcset: PLACEHOLDER_IMAGE
         }
       }
     }
@@ -35,7 +36,7 @@ export default {
     text-decoration: none;
     cursor: pointer;
   }
-  .container {
+  .container_item {
     width: 244px;  /* 设置小于表格的宽度 (1226-4)/5*/
     height: 161px;
   }

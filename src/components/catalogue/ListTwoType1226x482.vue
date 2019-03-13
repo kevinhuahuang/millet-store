@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 import Brick606x482 from './Brick606x482'
 export default {
   name: 'ListTwoType1226x482',
@@ -22,8 +23,8 @@ export default {
       default () {
         return [
           {
-            'img_url': '//i8.mifile.cn/b2c-mimall-media/e9243a59a7b9a29770eb6af22065094d.jpg?w=1212&h=716',
-            'img_url_webp': '//i8.mifile.cn/v1/a1/faed8af1-eb83-cd9c-ece4-eb372a9d3c22.webp?w=1212&h=716',
+            'img_url': PLACEHOLDER_IMAGE,
+            'img_url_webp': PLACEHOLDER_IMAGE,
             'img_url_color': '#AC7152',
             'product_id': '7128',
             'product_rebate': {
@@ -48,8 +49,8 @@ export default {
             'btntxt': '立即购买'
           },
           {
-            'img_url': '//i8.mifile.cn/b2c-mimall-media/fdde23255efe6e30caacbfac91235500.jpg?w=1212&h=716',
-            'img_url_webp': '//i8.mifile.cn/v1/a1/db585a66-85cc-8e54-f411-a06aaa8c3084.webp?w=1212&h=716',
+            'img_url': PLACEHOLDER_IMAGE,
+            'img_url_webp': PLACEHOLDER_IMAGE,
             'img_url_color': '#F0ECE7',
             'product_id': '6105',
             'product_rebate': {

@@ -21,7 +21,8 @@
 
 <script>
 import LeftNavigatorTable from './LeftNavigatorTable'
-import tableData from '@assets/json/main/navLeft.json'
+// import tableJson from '@static/json/main/navLeft.json'
+// import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'LeftNavigatorPopup',
   components: {LeftNavigatorTable},
@@ -43,19 +44,32 @@ export default {
     }
   },
   created: function () {
-    Object.keys(tableData).forEach(key => {
-      this.tableArray.push(tableData[key])
-      this.keyArray.push([this.tableArray[this.tableArray.length - 1]['data']['title'], this.tableArray[this.tableArray.length - 1]['data']['url']])
-      this.dataArray.push(this.tableArray[this.tableArray.length - 1]['right'])
-    })
-    this.tableData = this.dataArray[0] // 默认的初始值
-    // console.log(this.keyArray)
+    // 2019_03_09 数据由服务器提供
+    // this.tableData = tableJson
+    // Object.keys(this.tableData).forEach(key => {
+    //   this.tableArray.push(this.tableData[key])
+    //   this.keyArray.push([this.tableArray[this.tableArray.length - 1]['data']['title'], this.tableArray[this.tableArray.length - 1]['data']['url']])
+    //   this.dataArray.push(this.tableArray[this.tableArray.length - 1]['right'])
+    // })
+    // this.tableData = this.dataArray[0] // 默认的初始值
   },
   mounted: function () {
     this.navigatorContent = this.$refs.navigator_content
     this.leftNavigator = this.$refs.left_navigator
+    this.getData(this)
   },
   methods: {
+    getData: function (host) {
+      this.axios.get('/navLeftData').then(function (res) {
+        host.tableData = res.data
+        Object.keys(host.tableData).forEach(key => {
+          host.tableArray.push(host.tableData[key])
+          host.keyArray.push([host.tableArray[host.tableArray.length - 1]['data']['title'], host.tableArray[host.tableArray.length - 1]['data']['url']])
+          host.dataArray.push(host.tableArray[host.tableArray.length - 1]['right'])
+        })
+        host.tableData = host.dataArray[0] // 默认的初始值
+      })
+    },
     renewListWidth: function (len) {
       this.listWidth = Math.ceil(len / 6) * 248 + 'px' // 根据项目数量来设置弹出框的宽度
       this.$refs.commoditys.style.width = this.listWidth

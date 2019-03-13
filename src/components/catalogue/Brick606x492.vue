@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'Brick606x492',
   data () {
@@ -28,8 +29,8 @@ export default {
       type: Object,
       default () {
         return {
-          'img_url': '//i8.mifile.cn/b2c-mimall-media/5f7afe654efeca5b8b1b6323371586ba.jpg?w=1212&h=716',
-          'img_url_webp': '//i8.mifile.cn/v1/a1/9c0c6861-66e1-ccbe-f7e9-400ef206cdb5.webp?w=1212&h=716',
+          'img_url': PLACEHOLDER_IMAGE,
+          'img_url_webp': PLACEHOLDER_IMAGE,
           'img_url_color': '#D2AE9A',
           'product_id': '6222',
           'product_rebate': {

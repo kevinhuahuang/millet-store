@@ -23,6 +23,7 @@
 
 <script>
 import Brick246x161 from './Brick246x161'
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'ListTable',
   components: {Brick246x161},
@@ -61,117 +62,117 @@ export default {
         return [
           {
             url: 'https://www.mi.com/mix3/',
-            img: '//i1.mifile.cn/f/i/g/2015/cn-index/mix3-140.png',
+            img: PLACEHOLDER_IMAGE,
             product_name: '小米MIX 3',
-            srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/mix3-140.png'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: 'https://www.mi.com/mi8youth/',
-            img: '//i1.mifile.cn/f/i/g/2015/cn-index/qingchun-140.png',
+            img: PLACEHOLDER_IMAGE,
             product_name: '小米8 青春版',
-            srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/qingchun-140.png'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: 'https://www.mi.com/mi8ud/',
-            img: '//i1.mifile.cn/f/i/g/2015/cn-index/pingmu-140.png',
+            img: PLACEHOLDER_IMAGE,
             product_name: '小米8 屏幕指纹版',
-            srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/pingmu-140.png'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: 'https://www.mi.com/mi8/',
-            img: '//i1.mifile.cn/f/i/g/2015/cn-index/m8-140.png',
+            img: PLACEHOLDER_IMAGE,
             product_name: '小米8',
-            srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/m8-140.png'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: 'https://www.mi.com/mi8i/',
-            img: '//i1.mifile.cn/f/i/g/2015/cn-index/m8se-140.png',
+            img: PLACEHOLDER_IMAGE,
             product_name: '小米8 SE',
-            srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/m8se-140.png'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: 'https://www.mi.com/mix2s/',
-            img: '//i1.mifile.cn/f/i/g/2015/cn-index/mix2140-140white.png',
+            img: PLACEHOLDER_IMAGE,
             product_name: '小米MIX 2S',
-            srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/mix2140-140white.png'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: 'https://www.mi.com/max3/',
-            img: '//i1.mifile.cn/f/i/g/2015/cn-index/max3-140-140.png',
+            img: PLACEHOLDER_IMAGE,
             product_name: '小米Max 3',
-            srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/max3-140-140.png'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: 'https://www.mi.com/mi6x/',
-            img: '//i1.mifile.cn/f/i/g/2015/cn-index/80808080808080!70x70.jpg',
+            img: PLACEHOLDER_IMAGE,
             product_name: '小米6X',
-            srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/80808080808080!140x140.jpg'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: 'https://www.mi.com/blackshark2/',
-            img: '//i1.mifile.cn/f/i/g/2015/cn-index/heishahelo-140.png',
+            img: PLACEHOLDER_IMAGE,
             product_name: '黑鲨游戏手机 Helo',
-            srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/heishahelo-140.png'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: 'https://www.mi.com/blackshark/',
-            img: '//i1.mifile.cn/f/i/g/2015/cn-index/heisha-140.png',
+            img: PLACEHOLDER_IMAGE,
             product_name: '黑鲨游戏手机',
-            srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/heisha-140.png'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: '//www.mi.com/redmi6pro/',
-            img: '//i1.mifile.cn/f/i/g/2015/cn-index/6pro140-140.png',
+            img: PLACEHOLDER_IMAGE,
             product_name: '红米6 Pro',
-            srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/6pro140-140.png'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: '//www.mi.com/redmi6/',
-            img: '//i1.mifile.cn/f/i/g/2015/cn-index/666666.png',
+            img: PLACEHOLDER_IMAGE,
             product_name: '红米6',
-            srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/666666.png'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: '//www.mi.com/redmi6a/',
-            img: '//i1.mifile.cn/f/i/g/2015/cn-index/6AAAA.png',
+            img: PLACEHOLDER_IMAGE,
             product_name: '红米6A',
-            srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/6AAAA.png'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: 'https://www.mi.com/redminote5/',
-            img: '//i1.mifile.cn/f/i/g/2015/cn-index/note5-140-140.png',
+            img: PLACEHOLDER_IMAGE,
             product_name: '红米Note 5',
-            srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/note5-140-140.png'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: '//www.mi.com/p/5592.html',
-            img: '//c1.mifile.cn/f/i/g/2015/cn-index/4G140!70x70.jpg',
+            img: PLACEHOLDER_IMAGE,
             product_name: '移动4G+专区',
-            srcset: '//c1.mifile.cn/f/i/g/2015/cn-index/4G140!140x140.jpg'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: '//www.mi.com/compare/',
-            img: '//c1.mifile.cn/f/i/15/goods/list/compare!70x70.jpg',
+            img: PLACEHOLDER_IMAGE,
             product_name: '对比手机',
-            srcset: '//c1.mifile.cn/f/i/15/goods/list/compare!140x140.jpg'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: 'https://www.mi.com/micard',
-            img: '//c1.mifile.cn/f/i/g/2015/cn-index/mifenka-1!70x70.jpg',
+            img: PLACEHOLDER_IMAGE,
             product_name: '米粉卡 日租卡',
-            srcset: '//c1.mifile.cn/f/i/g/2015/cn-index/mifenka-1!140x140.jpg'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
-            url: '//www.mi.com/mimobile/',
+            url: PLACEHOLDER_IMAGE,
             img: '//c1.mifile.cn/f/i/15/goods/list/mimobile!70x70.jpg',
             product_name: '小米移动 电话卡',
-            srcset: '//c1.mifile.cn/f/i/15/goods/list/mimobile!140x140.jpg'
+            srcset: PLACEHOLDER_IMAGE
           },
           {
             url: 'https://item.mi.com/product/7532.html',
-            img: '//i1.mifile.cn/f/i/g/2015/cn-index/weixiu140-140.png',
+            img: PLACEHOLDER_IMAGE,
             product_name: '手机上门维修',
-            srcset: '//i1.mifile.cn/f/i/g/2015/cn-index/weixiu140-140.png'
+            srcset: PLACEHOLDER_IMAGE
           }
         ]
       }
@@ -245,6 +246,7 @@ export default {
   }
   .table {
     position: absolute;
+    width: $WIDTH;
     top: 45px;
     border-color: #d4d4d4; /* 边框颜色 */
     border-collapse: collapse; /* 表格的边框合并为一个单一的边框 */

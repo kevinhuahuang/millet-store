@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'ProductionListOne1226x434',
   data () {
@@ -42,8 +43,8 @@ export default {
           'btn_color': '#ea625b',
           'items': [
             {
-              'img_url': 'https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/a63d534a69a19b6915f2dbc72f708c28.jpg?w=1708&h=868',
-              'img_url_webp': '//i8.mifile.cn/v1/a1/b5adc53f-9faf-b250-4d9b-c9a050a3304e.webp?w=1708&h=868',
+              'img_url': PLACEHOLDER_IMAGE,
+              'img_url_webp': PLACEHOLDER_IMAGE,
               'img_url_color': '#CDAAAE',
               'product_id': '8993',
               'product_rebate': [

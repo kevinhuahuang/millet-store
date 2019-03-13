@@ -1,0 +1,42 @@
+未更新
+文件结构：
+build
+config
+dist   存放编译后文件的文件夹
+  static
+    css
+    js
+    images
+    img
+    json
+routes
+server
+  public
+    json
+      kind
+      list
+      main
+      overview
+  routes
+src
+  assets 该文件夹下的文件Webpack编译时会编译进代码里
+    css
+    fonticon
+    images
+    scss
+  components
+    catalogue
+    commodity
+    list
+    main
+    overview
+    public
+  pages
+    kind
+    life
+    list
+    main
+  public 保存公共常量，公共方法
+  router vue-router的index.js文件
+static webpack编译时会处理此文件夹
+

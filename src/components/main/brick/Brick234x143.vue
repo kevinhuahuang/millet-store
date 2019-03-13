@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container_item">
     <div class="content">
       <div class="left_area"> <!--left与right各占50%的宽度，display:inline-block-->
         <div class="text_area">
@@ -16,6 +16,7 @@
   </div>
 </template>
 <script>
+import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'Brick234x143',
   data: function () {
@@ -36,8 +37,8 @@ export default {
           mat_id: '5580',
           sale_price: '1399',
           origin_price: '',
-          image: '//i1.mifile.cn/a1/pms_1537323963.1278763!220x220.jpg',
-          image_hd: '//i1.mifile.cn/a1/pms_1537323963.1278763!440x440.jpg',
+          image: PLACEHOLDER_IMAGE,
+          image_hd: PLACEHOLDER_IMAGE,
           desc: '潮流镜面渐变色，2400万自拍旗舰',
           sub_title: '',
           commodity_id: '1183600009',
@@ -66,7 +67,7 @@ export default {
   a{
     text-decoration: none;
   }
-  .container {
+  .container_item {
     width: 234px;
     height: 143px;
     background: white;

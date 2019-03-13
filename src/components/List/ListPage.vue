@@ -13,27 +13,44 @@
 
 <script>
 import ListTable from './ListTable'
-import dataJSON from '@assets/json/list/list.json'
+// import jsonData from '@static/json/list/list.json'
 import SegmentFooter from '../main/segment/SegmentFooter'
 import BrickFooter from '../main/brick/BrickFooter'
 import HeaderNavigator from '../main/headerNavigator/HeaderNavigator'
 import Header from '../main/headerNavigator/Header'
+// import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
 export default {
   name: 'ListPage',
   components: {Header, HeaderNavigator, BrickFooter, SegmentFooter, ListTable},
   data () {
     return {
       titleArray: [],
-      dataArray: []
+      dataArray: [],
+      dataJson: null
     }
   },
   created () {
-    for (let key in dataJSON) {
-      this.titleArray.push(key)
-      this.dataArray.push(dataJSON[key])
+    // for (let key in jsonData) {
+    //   this.titleArray.push(key)
+    //   this.dataArray.push(jsonData[key])
+    // }
+  },
+  mounted: function () {
+    this.getData(this)
+  },
+  methods: {
+    getData: function (host) {
+      this.axios.get('/listPageData').then(function (res) {
+        host.dataJson = res.data
+        host.titleArray = []
+        for (let key in host.dataJson) {
+          host.titleArray.push(key)
+          host.dataArray.push(host.dataJson[key])
+        }
+      })
     }
   },
-  mounted () {
+  props: {
   }
 }
 </script>

@@ -22,7 +22,8 @@
 <script>
 import FlashBuyTime from './FlashBuyTime'
 import FlashBuyItem from './FlashBuyItem'
-import listData from '@assets/json/main/flashBuy.json'
+// import {PLACEHOLDER_IMAGE} from '@/public/CONSTANT.js'
+// import jsonData from '@static/json/main/flashBuy.json'
 export default {
   name: 'FlashBuy',
   components: {FlashBuyItem, FlashBuyTime},
@@ -38,23 +39,34 @@ export default {
       itemIndex: 0,
       isLeftEnd: true,
       isRightEnd: false,
-      colorArray: ['#FFAC13', '#83C44E', '#2196F3', '#E53935', '#00C0A5']
+      colorArray: ['#FFAC13', '#83C44E', '#2196F3', '#E53935', '#00C0A5'],
+      dataJson: null
     }
   },
   created: function () { /* 不要在beforeCreate时调用 */
-    this.listDataArray = listData['data']['list']['list']
-    this.itemLength = this.listDataArray.length
+    // this.dataJson = jsonData
+    // this.listDataArray = this.dataJson['data']['list']['list']
+    // this.itemLength = this.listDataArray.length
   },
   mounted: function () {
-    this.commodityListRef = this.$refs.commodityListRef
-    this.leftMoveRef = this.$refs.leftMoveRef
-    this.leftMoveRef.style.opacity = '0.4'
-    this.rightMoveRef = this.$refs.rightMoveRef
-    this.maxWidth = (14 + 234) * this.itemLength // 14是左边的间隙，234是矩形宽度
-    this.commodityListRef.style.width = this.maxWidth + 'px' // 设定可移动矩形的宽度
+    this.getData(this)
     // console.log(this.leftMoveRef.before)
   },
   methods: {
+    getData: function (host) {
+      this.axios.get('/flashBuyData').then(function (res) {
+        host.dataJson = res.data
+        host.listDataArray = host.dataJson['data']['list']['list']
+        host.itemLength = host.listDataArray.length
+
+        host.commodityListRef = host.$refs.commodityListRef
+        host.leftMoveRef = host.$refs.leftMoveRef
+        host.leftMoveRef.style.opacity = '0.4'
+        host.rightMoveRef = host.$refs.rightMoveRef
+        host.maxWidth = (14 + 234) * host.itemLength // 14是左边的间隙，234是矩形宽度
+        host.commodityListRef.style.width = host.maxWidth + 'px' // 设定可移动矩形的宽度
+      })
+    },
     leftClick: function () {
       this.itemIndex -= 4 // 移动一次，4个元素
       if (this.itemIndex < 0) {
@@ -123,6 +135,8 @@ export default {
         this.rightMoveRef.style.opacity = '0.9'
       }
     }
+  },
+  props: {
   }
 }
 </script>
