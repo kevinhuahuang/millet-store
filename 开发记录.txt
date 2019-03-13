@@ -114,7 +114,7 @@
   假设它设置为'', npm run dev后。将CopyWebpackPlugin指定的from路径的内容（比如文件夹images）直接拷贝到根目录下。
   然后访问这个文件夹内的图片的路径应该为 'images/.....'
 
-
+  注意：有两个new CopyWebpackPlugin的设置一个在webpack.prod.conf.js用于build。一个在webpack.dev.conf.js用于dev
 
 记录7： "创建了vue项目后，npm run dev 失败",
   关闭webStorm，重新打开，npm run build，再npm run dev。不成功，再 npm run build 再 npm run dev，不行多试几次
